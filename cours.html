@@ -271,6 +271,32 @@
   </div>
 
   <script src="assets/js/app.js"></script>
+  <script>
+    // Fallback: ensure tab buttons work even if main script didn't attach handlers
+    (function(){
+      try {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        if (tabBtns.length) {
+          tabBtns.forEach(btn => {
+            // avoid double-attaching
+            if (btn.dataset.hasFallback) return;
+            btn.addEventListener('click', function(){
+              try {
+                const tabName = this.getAttribute('data-tab');
+                document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+                tabBtns.forEach(b => b.classList.remove('active'));
+                const tabEl = document.getElementById('tab-' + tabName);
+                if (tabEl) tabEl.classList.add('active');
+                this.classList.add('active');
+                console.log('Fallback: tab switched to', tabName);
+              } catch (e) { console.warn('Fallback tab handler error', e); }
+            }, {passive:true});
+            btn.dataset.hasFallback = '1';
+          });
+        }
+      } catch (e) { console.warn('Tabs fallback init error', e); }
+    })();
+  </script>
 </body>
 </html>
 
