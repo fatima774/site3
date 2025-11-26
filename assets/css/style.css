@@ -361,7 +361,18 @@ input:focus,textarea:focus,select:focus{outline:3px solid color-mix(in oklab,var
 img{max-width:100%;height:auto;display:block}
 .hidden{display:none}
 
-/* Language selector styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .lang-selector {
   padding: 8px 12px;
   border-radius: 8px;
@@ -375,15 +386,6 @@ img{max-width:100%;height:auto;display:block}
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
 }
 
-.lang-selector:hover {
-  border-color: var(--primary);
-  box-shadow: 0 6px 16px rgba(15, 79, 230, 0.12);
-}
-
-.lang-selector:focus {
-  outline: 3px solid color-mix(in oklab, var(--primary) 28%, transparent);
-  outline-offset: 2px;
-}
 
 /* -------------------------
    Small animations
@@ -392,4 +394,5 @@ img{max-width:100%;height:auto;display:block}
 .fade-in{animation:floatUp .6s ease both}
 
 /* End of file */
+
 
