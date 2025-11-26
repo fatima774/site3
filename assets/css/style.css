@@ -113,7 +113,7 @@ p{margin:0;color:var(--muted)}
 /* -------------------------
    Hero image wrapper (responsive, shape, overlay)
    ------------------------- */
-.hero-right{display:flex;align-items:center;justify-content:center;position:relative;perspective:1200px}
+.hero-right{margin-top:40px;display:flex;align-items:center;justify-content:center;position:relative;perspective:1200px}
 
 
 
@@ -126,7 +126,7 @@ p{margin:0;color:var(--muted)}
 @media(max-width:880px){.about-inner{gap:32px}}
 .about-content{display:flex;flex-direction:column;gap:18px}
 .about-content h2{font-size:var(--h2-size);margin-bottom:12px;color:var(--text)}
-.about-content p{color:var(--muted);line-height:1.8;font-size:1rem;margin:0}
+.about-content p{text-align:justify;color:var(--muted);line-height:1.8;font-size:1rem;margin:0}
 .about-images{display:flex;align-items:center;justify-content:center}
 .about-image{width:100%;max-width:520px;height:auto;border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--border);object-fit:cover}
 @media(max-width:880px){.about-image{max-width:100%;height:300px}}
@@ -392,3 +392,4 @@ img{max-width:100%;height:auto;display:block}
 .fade-in{animation:floatUp .6s ease both}
 
 /* End of file */
+
