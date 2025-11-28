@@ -21,7 +21,7 @@
     text-align: justify; /* ou left, right, center selon ton besoin */
 }
 /* Justifier tout le texte du site */
-body, p, h1, h2, h3, h4, h5, h6, li, a, span, div {
+body, p, li, a, span, div {
     text-align: justify;
 }
 #primary-menu.open {
@@ -412,6 +412,7 @@ img{max-width:100%;height:auto;display:block}
 .fade-in{animation:floatUp .6s ease both}
 
 /* End of file */
+
 
 
 
