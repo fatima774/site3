@@ -7,21 +7,30 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="header" role="banner">
     <div class="container navbar">
       <a class="logo" href="index.html">Learn French in Foix</a>
-      <nav class="nav" aria-label="Navigation principale">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
-        <ul id="primary-menu" class="nav-list">
-          <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
-          <li><a href="cours.html" data-i18n="nav_courses">Stages & Cours</a></li>
-          <li><a href="niveaux.html" data-i18n="nav_levels">Niveaux</a></li>
-          <li><a href="tarifs.html" class="active" data-i18n="nav_prices">Tarifs</a></li>
-          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="nav-actions"><a href="contact.html" class="nav-cta">Faites un essai gratuit</a></div>
-    </div>
+<nav class="nav" aria-label="Navigation principale">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+  <ul id="primary-menu" class="nav-list">
+    <li><a href="index.html" class="active" data-i18n="nav_home">Accueil</a></li>
+    <li><a href="cours.html" data-i18n="nav_courses">Stages & Cours</a></li>
+    <li><a href="niveaux.html" data-i18n="nav_levels">Niveaux</a></li>
+    <li><a href="tarifs.html" data-i18n="nav_prices">Tarifs</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="nav-actions">
+  <a href="contact.html" class="nav-cta" data-i18n="nav_cta">Faites un essai gratuit</a>
+</div>
+
+<!-- ⭐ Sélecteur de langue -->
+<select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue">
+  <option value="fr">Français</option>
+  <option value="en">English</option>
+</select>
+
   </header>
 
   <main>
@@ -194,12 +203,7 @@
     </div>
   </footer>
 
-  <div class="controls" aria-label="Contrôles du site">
-    <select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue">
-      <option value="fr">Français</option>
-      <option value="en">English</option>
-    </select>
-  </div>
+ 
 
   <script src="assets/js/app.js"></script>
 </body>
