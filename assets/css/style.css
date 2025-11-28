@@ -21,30 +21,28 @@
     text-align: justify; /* ou left, right, center selon ton besoin */
 }
 /* Justifier tout le texte du site */
-body, p, li, a, span, div {
+p{
     text-align: justify;
 }
-#primary-menu.open {
-  display: flex; /* ou block selon le layout */
-  flex-direction: column;
-  gap: 12px;
+h1, h2, h3, h4, h5, h6 {
+    color: var(--salmon); /* remplace la couleur bleue */
 }
-
 :root{
-  --bg:#f6fbff;
-  --surface:#ffffff;
-  --text:#0b1b33;
-  --muted:#6b7a8a;
+  --bg: #f6fbff;        /* fond très clair */
+  --surface: #ffffff;    /* cartes, sections */
+  --text: #0b1b33;       /* texte principal bleu foncé */
+  --muted: #6b7a8a;    
+--salmon: #FF7F50;
+  --primary: #FF7F50;    /* saumon pour titres et accents */
+  --primary-600: #FF6347;/* saumon foncé (hover) */
+  --accent: #FFD700; 
+   --cta: #FFD700;
+  --cta-600: #FFC300;
+--border: #e6eefb;
+  --shadow: 0 24px 60px rgba(15,23,42,0.08);
+  --radius: 16px;
 
-  --primary:#0f4fe6;
-  --primary-600:#0b3fc0;
-  --accent:#2fb589;
-  --cta:#ffd400;
-  --cta-600:#ffbf00;
-
-  --border:#e6eefb;
-  --shadow:0 24px 60px rgba(15,23,42,0.08);
-  --radius:16px;
+ 
   --transition:200ms cubic-bezier(.2,.9,.2,1);
   --max-width:1200px;
 
@@ -61,9 +59,9 @@ html[data-theme="dark"]{
   --text:#e6eefc;
   --muted:#98a2b3;
 
-  --primary:#6ea2ff;
-  --primary-600:#568cf2;
-  --accent:#4fd1a1;
+  --primary:#FFA07A;
+  --primary-600:#FF8C69;
+  --accent:#FFDAB9;
   --cta:#ffd85a;
   --cta-600:#ffcf2a;
 
@@ -412,7 +410,5 @@ img{max-width:100%;height:auto;display:block}
 .fade-in{animation:floatUp .6s ease both}
 
 /* End of file */
-
-
 
 
