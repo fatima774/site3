@@ -28,17 +28,20 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--salmon); /* remplace la couleur bleue */
 }
 :root{
-  --bg: #f6fbff;        /* fond très clair */
-  --surface: #ffffff;    /* cartes, sections */
-  --text: #0b1b33;       /* texte principal bleu foncé */
-  --muted: #6b7a8a;    
---salmon: #FF7F50;
-  --primary: #FF7F50;    /* saumon pour titres et accents */
-  --primary-600: #FF6347;/* saumon foncé (hover) */
-  --accent: #FFD700; 
-   --cta: #FFD700;
-  --cta-600: #FFC300;
---border: #e6eefb;
+      --bg: #FFF8F2;          /* fond très clair, neutre */
+  --surface: #FFFFFF;      /* cartes et sections */
+  --text: #1A2B3C;         /* texte principal bleu foncé/gris */
+  --muted: #7A7A7A;        /* texte secondaire, gris chaud */
+
+  /* Couleurs principales */
+  --primary: #FFB87C;      /* orange pâle dominant */
+  --primary-600: #FFA15A;  /* orange un peu plus foncé pour hover */
+  --accent: #A3D5FF;       /* bleu pastel secondaire */
+  --cta: #FFB87C;          /* CTA orange pâle */
+  --cta-600: #FFA15A;       /* hover des boutons */
+
+  /* Bordures et ombres */
+  --border: #E8E2DE;
   --shadow: 0 24px 60px rgba(15,23,42,0.08);
   --radius: 16px;
 
