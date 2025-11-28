@@ -98,14 +98,62 @@ p{margin:0;color:var(--muted)}
 }
 .navbar{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{font-weight:900;color:var(--primary);font-size:1.15rem}
-.nav{display:flex;align-items:center;gap:12px}
-.nav-list{display:flex;gap:14px;list-style:none;margin:0;padding:0}
-.nav-list a{padding:8px 10px;border-radius:10px;font-weight:700;transition:background var(--transition)}
-.nav-list a:hover{background:rgba(15,79,230,0.06)}
-.nav-cta{background:var(--cta);color:#071026;padding:10px 14px;border-radius:12px;font-weight:900;box-shadow:0 12px 30px rgba(15,79,230,0.12)}
-.nav-cta:hover{transform:translateY(-3px);background:var(--cta-600)}
-.nav-toggle{display:none;background:transparent;border:1px solid var(--border);padding:8px;border-radius:10px}
-@media(max-width:920px){.nav-list{display:none}.nav-toggle{display:inline-block}}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-list {
+  display: flex !important;          /* Toujours visible */
+  flex-direction: row !important;    /* Horizontal sur mobile aussi */
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all var(--transition);
+  background: rgba(255, 184, 124, 0.1); /* léger fond orange pâle */
+}
+
+.nav-list a:hover {
+  background: var(--cta);
+  color: #071026;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(15,79,230,0.12);
+}
+
+.nav-cta {
+  background: var(--cta);
+  color: #071026;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 900;
+  box-shadow: 0 12px 30px rgba(15,79,230,0.12);
+  transition: all var(--transition);
+}
+
+.nav-cta:hover {
+  transform: translateY(-3px);
+  background: var(--cta-600);
+}
+
+.nav-toggle {
+  display: none !important;  /* On cache complètement le bouton burger */
+}
+
+/* Optionnel : sur petit écran, tu peux passer en vertical si tu veux */
+@media(max-width:920px){
+  .nav-list {
+    flex-direction: column; /* menu vertical sur mobile */
+    gap: 12px;
+  }
+}
 
 /* -------------------------
    Hero (layout)
