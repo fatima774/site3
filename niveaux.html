@@ -3,112 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="page_title">Learn French in Foix — Site officiel</title>
+  <title>Niveaux CECR - Learn French in Foix</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 <header class="header" role="banner">
     <div class="container navbar">
       <a class="logo" href="index.html">Learn French in Foix</a>
-<nav class="nav" aria-label="Navigation principale">
-  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
-  <ul id="primary-menu" class="nav-list">
-    <li><a href="index.html" class="active" data-i18n="nav_home">Accueil</a></li>
-    <li><a href="cours.html" data-i18n="nav_courses">Stages & Cours</a></li>
-    <li><a href="niveaux.html" data-i18n="nav_levels">Niveaux</a></li>
-    <li><a href="tarifs.html" data-i18n="nav_prices">Tarifs</a></li>
-    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-  </ul>
-</nav>
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+        <ul id="primary-menu" class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="cours.html">Stages & Cours</a></li>
+          <li><a href="niveaux.html" class="active">Niveaux</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quisuisje.html">Qui suis-je ?</a></li>
+        </ul>
+      </nav>
 
-<div class="nav-actions">
-  <a href="contact.html" class="nav-cta" data-i18n="nav_cta">Faites un essai gratuit</a>
-</div>
+      <div class="nav-actions">
+        <!-- Suppression du bouton "essai gratuit" si nécessaire -->
+      </div>
 
-<!-- ⭐ Sélecteur de langue -->
-<select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue">
-  <option value="fr">Français</option>
-  <option value="en">English</option>
-</select>
-
+      <select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue">
+        <option value="fr" selected>Français</option>
+        <option value="en">English</option>
+      </select>
+    </div>
   </header>
 
   <main>
-    <!-- Hero section -->
     <section class="page-hero container">
-      <h1 data-i18n="levels_title">Niveaux CECR</h1>
-      <p class="page-intro" data-i18n="levels_intro">Découvrez les profils correspondant à chaque niveau de formation.</p>
+      <h1>Niveaux CECR</h1>
+      <p class="page-intro">Découvrez les profils correspondant à chaque niveau de formation.</p>
     </section>
 
-    <!-- Main content container -->
     <div class="container levels-content">
       
-      <!-- Introduction -->
       <div class="levels-intro-section">
-        <h2 data-i18n="levels_info_title">Fonctionnement des groupes</h2>
-        <p data-i18n="levels_info_text">Chez Learn French in Foix, il n'y a qu'un petit groupe de 6 étudiants maximum à la fois. Les cours s'adressent à tous les niveaux. C'est le niveau de la première personne inscrite qui détermine le niveau de la semaine.</p>
-        <p data-i18n="levels_calendar_text">Le calendrier indique les dates correspondant à chaque niveau.</p>
-        <p data-i18n="levels_cefr_text">Les niveaux correspondent aux profils suivants. Les indications entre parenthèses (A2, B1, etc.) renvoient aux niveaux du CECR (Cadre Européen Commun de Référence pour les Langues). Consultez la <a href="https://europass.cedefop.europa.eu/fr/resources/european-language-levels-cefr" target="_blank" rel="noopener">grille officielle CEFR</a>.</p>
+        <h2>Fonctionnement des groupes</h2>
+        <p>Chez Learn French in Foix, il n'y a qu'un petit groupe de 6 étudiants maximum à la fois. Les cours s'adressent à tous les niveaux. C'est le niveau de la première personne inscrite qui détermine le niveau de la semaine.</p>
+        <p>Le calendrier indique les dates correspondant à chaque niveau.</p>
+        <p>Les niveaux correspondent aux profils suivants. Les indications entre parenthèses (A2, B1, etc.) renvoient aux niveaux du CECR (Cadre Européen Commun de Référence pour les Langues). Consultez la <a href="https://europass.cedefop.europa.eu/fr/resources/european-language-levels-cefr" target="_blank" rel="noopener">grille officielle CEFR</a>.</p>
       </div>
 
-      <!-- Level Cards -->
       <div class="levels-grid">
-        
-        <!-- Level A2 -->
+
+        <!-- Niveau A1 ajouté -->
+        <div class="level-card" style="border: 2px solid #007BFF; padding: 1em; background: #f0f8ff;">
+          <div class="level-badge">A1</div>
+          <h3>Débutant</h3>
+          <div class="level-content">
+            <h4>Votre profil</h4>
+            <ul class="profile-list">
+              <li>Je peux comprendre des mots familiers et des expressions très courantes au sujet de moi-même, de ma famille et de l'environnement concret et immédiat, si les gens parlent lentement et distinctement.</li>
+              <li>Je peux communiquer, de façon simple, à condition que l'interlocuteur soit disposé à répéter ou à reformuler ses phrases plus lentement et à m'aider à formuler ce que j'essaie de dire.</li>
+              <li>Je peux poser des questions simples sur des sujets familiers ou sur ce dont j’ai immédiatement besoin, ainsi que répondre à de telles questions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Niveau A2 -->
         <div class="level-card">
           <div class="level-badge">A2</div>
-          <h3 data-i18n="levels_a2_title">Élémentaire</h3>
-          
+          <h3>Élémentaire</h3>
           <div class="level-content">
-            <h4 data-i18n="levels_a2_subtitle">Votre profil</h4>
+            <h4>Votre profil</h4>
             <ul class="profile-list">
-              <li data-i18n="levels_a2_item1">J'ai un peu étudié le français à l'école mais je ne l'ai pas pratiqué et/ou j'étudie depuis deux ou trois ans quelques heures par semaine.</li>
-              <li data-i18n="levels_a2_item2">Je peux communiquer quand je voyage (hôtel, restaurant, gare...) et parler de ma vie, ma famille, mes activités, mon travail.</li>
-              <li data-i18n="levels_a2_item3">Je comprends des phrases simples si la personne parle lentement.</li>
-              <li data-i18n="levels_a2_item4">J'ai déjà étudié les verbes au présent, passé et futur mais je fais encore des erreurs.</li>
+              <li>J'ai un peu étudié le français à l'école mais je ne l'ai pas pratiqué et/ou j'étudie depuis deux ou trois ans quelques heures par semaine.</li>
+              <li>Je peux communiquer quand je voyage (hôtel, restaurant, gare...) et parler de ma vie, ma famille, mes activités, mon travail.</li>
+              <li>Je comprends des phrases simples si la personne parle lentement.</li>
+              <li>J'ai déjà étudié les verbes au présent, passé et futur mais je fais encore des erreurs.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Level B1 -->
+        <!-- Niveau B1 -->
         <div class="level-card">
           <div class="level-badge">B1</div>
-          <h3 data-i18n="levels_b1_title">Intermédiaire</h3>
-          
+          <h3>Intermédiaire</h3>
           <div class="level-content">
-            <h4 data-i18n="levels_b1_subtitle">Votre profil</h4>
+            <h4>Votre profil</h4>
             <ul class="profile-list">
-              <li data-i18n="levels_b1_item1">J'ai étudié le français à l'école pendant au moins 4 ans et/ou je prends des cours depuis au moins trois ans.</li>
-              <li data-i18n="levels_b1_item2">J'ai l'occasion de pratiquer la langue au cours de voyages ou dans mon pays.</li>
-              <li data-i18n="levels_b1_item3">Je peux parler de sujets familiers, raconter un évènement, parler d'un projet, donner une opinion même si je fais des erreurs et que je manque de pratique pour être à l'aise.</li>
-              <li data-i18n="levels_b1_item4">Je comprends assez bien quand on me parle directement et pas trop vite, je comprends les points essentiels des informations à la télévision mais pas forcément les détails.</li>
-              <li data-i18n="levels_b1_item5">J'ai des connaissances théoriques de la langue française, j'ai déjà étudié les principaux temps des verbes mais j'ai besoin de révisions et de pratique.</li>
+              <li>J'ai étudié le français à l'école pendant au moins 4 ans et/ou je prends des cours depuis au moins trois ans.</li>
+              <li>J'ai l'occasion de pratiquer la langue au cours de voyages ou dans mon pays.</li>
+              <li>Je peux parler de sujets familiers, raconter un évènement, parler d'un projet, donner une opinion même si je fais des erreurs et que je manque de pratique pour être à l'aise.</li>
+              <li>Je comprends assez bien quand on me parle directement et pas trop vite, je comprends les points essentiels des informations à la télévision mais pas forcément les détails.</li>
+              <li>J'ai des connaissances théoriques de la langue française, j'ai déjà étudié les principaux temps des verbes mais j'ai besoin de révisions et de pratique.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Level B2/C1 -->
+        <!-- Niveau B2/C1 -->
         <div class="level-card">
           <div class="level-badge">B2–C1</div>
-          <h3 data-i18n="levels_b2c1_title">Bon ou très bon</h3>
-          
+          <h3>Bon ou très bon</h3>
           <div class="level-content">
-            <h4 data-i18n="levels_b2c1_subtitle">Votre profil</h4>
+            <h4>Votre profil</h4>
             <ul class="profile-list">
-              <li data-i18n="levels_b2c1_item1">Je parle facilement (même si je fais encore des erreurs), je regarde des programmes à la télévision sur des sujets d'actualité, je peux en discuter et donner mon opinion.</li>
-              <li data-i18n="levels_b2c1_item2">Je peux participer à des conversations sur des sujets variés et lire un journal, un roman sans trop de problèmes.</li>
-              <li data-i18n="levels_b2c1_item3">J'aimerais parler plus correctement, savoir par exemple mieux utiliser tous les pronoms, le subjonctif, découvrir des expressions familières, adapter mon vocabulaire aux différents niveaux de langue.</li>
+              <li>Je parle facilement (même si je fais encore des erreurs), je regarde des programmes à la télévision sur des sujets d'actualité, je peux en discuter et donner mon opinion.</li>
+              <li>Je peux participer à des conversations sur des sujets variés et lire un journal, un roman sans trop de problèmes.</li>
+              <li>J'aimerais parler plus correctement, savoir par exemple mieux utiliser tous les pronoms, le subjonctif, découvrir des expressions familières, adapter mon vocabulaire aux différents niveaux de langue.</li>
             </ul>
           </div>
         </div>
 
       </div>
-
     </div>
   </main>
 
-
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-top container">
       <div class="footer-brand">
@@ -131,13 +135,13 @@
 
       <nav class="footer-nav" aria-label="Navigation du pied de page">
         <ul class="nav-column">
-          <li><a href="index.html" data-i18n="nav_home">ACCUEIL</a></li>
-          <li><a href="cours.html" data-i18n="nav_courses">STAGES & COURS</a></li>
-          <li><a href="niveaux.html" data-i18n="nav_levels">NIVEAUX</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="cours.html">STAGES & COURS</a></li>
+          <li><a href="niveaux.html">NIVEAUX</a></li>
         </ul>
         <ul class="nav-column">
-          <li><a href="tarifs.html" data-i18n="nav_prices">TARIFS</a></li>
-          <li><a href="contact.html" data-i18n="nav_contact">CONTACT</a></li>
+          <li><a href="tarifs.html">TARIFS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
           <li><a href="mentions-legales.html">MENTIONS LÉGALES</a></li>
         </ul>
       </nav>
@@ -145,12 +149,9 @@
 
     <div class="footer-bottom container">
       <p>Copyright © 2025 Learn French in Foix. Tous droits réservés.</p>
- 
     </div>
   </footer>
-
 
   <script src="assets/js/app.js"></script>
 </body>
 </html>
-
