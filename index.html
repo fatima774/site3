@@ -3,151 +3,122 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="page_title">Learn French in Foix — Site officiel</title>
+  <title>Learn French in Foix — Site officiel</title>
   <meta name="description" content="Stages immersifs et cours individuels de FLE à Foix. Progresser rapidement en français." />
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Preload hero image for faster paint (nom attendu : photo_foix.webp) -->
-  <link rel="preload" as="image" href="assets/images/photo_foix.webp" />
+  <!-- Preload hero images -->
+  <link rel="preload" as="image" href="assets/images/chateau_foix.webp" />
+  <link rel="preload" as="image" href="assets/images/carte_foix.png" />
 </head>
 <body>
   <!-- Header -->
   <header class="header" role="banner">
     <div class="container navbar">
       <a class="logo" href="index.html">Learn French in Foix</a>
-<nav class="nav" aria-label="Navigation principale">
-  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
-  <ul id="primary-menu" class="nav-list">
-    <li><a href="index.html" class="active" data-i18n="nav_home">Accueil</a></li>
-    <li><a href="cours.html" data-i18n="nav_courses">Stages & Cours</a></li>
-    <li><a href="niveaux.html" data-i18n="nav_levels">Niveaux</a></li>
-    <li><a href="tarifs.html" data-i18n="nav_prices">Tarifs</a></li>
-    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-  </ul>
-</nav>
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+        <ul id="primary-menu" class="nav-list">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="cours.html">Stages & Cours</a></li>
+          <li><a href="niveaux.html">Niveaux</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quisuisje.html">Qui suis-je ?</a></li> <!-- Ajout onglet qui suis-je -->
+        </ul>
+      </nav>
 
-<div class="nav-actions">
-  <a href="contact.html" class="nav-cta" data-i18n="nav_cta">Faites un essai gratuit</a>
-</div>
+      <div class="nav-actions">
+        <!-- Boutons "essai gratuit" retirés -->
+      </div>
 
-<!-- ⭐ Sélecteur de langue -->
-<select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue">
-  <option value="fr">Français</option>
-  <option value="en">English</option>
-</select>
+      <!-- Sélecteur de langue -->
+      <select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
 
+    </div>
   </header>
 
-  <!-- Hero (avec image que tu as téléchargée) -->
+  <!-- 1er bandeau horizontal avec photo du château et carte Foix -->
+  <section class="banner-chateau" aria-label="Photo du château de Foix avec carte">
+    <div class="banner-image-container">
+      <img src="assets/images/chateau_foix.webp" alt="Château de Foix" class="banner-image" loading="lazy">
+      <img src="assets/images/carte_foix.png" alt="Carte de France situant Foix" class="banner-carte" loading="lazy" aria-hidden="true">
+    </div>
+  </section>
+
+  <!-- 2ème bandeau horizontal avec photo groupe stagiaires (à remplacer + tard) -->
+  <section class="banner-groupe" aria-label="Photo groupe stagiaires">
+    <div class="banner-image-container">
+      <!-- Photo groupe à ajouter ici -->
+      <!-- Exemple : <img src="assets/images/groupe_stagiaires.webp" alt="Groupe de stagiaires" class="banner-image" loading="lazy"> -->
+    </div>
+  </section>
+
+  <!-- Grand titre remplacé -->
   <section class="hero" role="region" aria-labelledby="hero-title">
     <div class="container hero-inner">
       <div class="hero-left">
-        <span class="hero-eyebrow" aria-hidden="true" data-i18n="hero_eyebrow">Stages immersifs</span>
-        <h1 id="hero-title" class="hero-title" data-i18n="hero_title">Transformer vos cours en progrès réels</h1>
-        <p class="hero-sub" data-i18n="hero_subtitle">Stages intensifs et cours individuels pour progresser rapidement en français, dans un cadre authentique.</p>
-
-        <div class="cta-row">
-          <a class="btn-cta" href="cours.html" data-i18n="hero_cta_primary">Démarrez l’essai gratuit</a>
-          <a class="btn-outline" href="contact.html" data-i18n="hero_cta_secondary">Demander une démo</a>
-        </div>
-
-        <ul class="hero-features" aria-hidden="true">
-          <li class="hero-feature" data-i18n="hero_feature_hours">30h/semaine</li>
-          <li class="hero-feature" data-i18n="hero_feature_culture">Activités culturelles</li>
-          <li class="hero-feature" data-i18n="hero_feature_groups">Groupes réduits</li>
-        </ul>
-      </div>
-
-      <!-- HERO (image responsive avec overlay) -->
-      <div class="hero-right">
-        <picture class="about-images" id="about-images">
-          <img src="assets/images/foix-2.png"
-               alt="Vue panoramique de Foix et des Pyrénées"
-               loading="lazy"
-               class="about-image"
-               id="about-image"
-               data-i18n="hero_image_alt">
-        </picture>
-
-        <!-- overlay pour lisibilité si tu superposes du texte -->
-        <div class="hero-image-overlay" aria-hidden="true"></div>
+        <h1 id="hero-title" class="hero-title">
+          Cours intensifs de français en immersion pour adultes,<br>
+          de une à deux semaines.<br>
+          A Foix, dans le Sud-Ouest de la France, dans les Pyrénées,<br>
+          entre Toulouse et l'Andorre
+        </h1>
       </div>
     </div>
   </section>
 
-  <!-- Features 4-up -->
-  <section class="features container" aria-label="Fonctionnalités">
-    <div class="features-grid">
-      <article class="feature-card">
-        <div class="feature-icon">1</div>
-        <div class="feature-content">
-          <h3 data-i18n="feature1_title">Convertir avec des e‑mails et SMS</h3>
-          <p data-i18n="feature1_desc">Campagnes ciblées et immersion linguistique pour accélérer la pratique orale.</p>
-        </div>
+  <!-- Arches : 3 avec messages demandés -->
+  <section class="arches container" aria-label="Informations clés sur Foix et les cours">
+    <div class="arches-grid">
+      <article class="arche">
+        <h3>Une Vieille ville pittoresque</h3>
+        <p>Restaurants, cafés, boutiques, artisanat, gare à quelques minutes à pied de la salle de cours. Pas besoin de voiture pendant votre stage.</p>
       </article>
-
-      <article class="feature-card">
-        <div class="feature-icon">2</div>
-        <div class="feature-content">
-          <h3 data-i18n="feature2_title">Créer du contenu pertinent</h3>
-          <p data-i18n="feature2_desc">Supports pédagogiques adaptés et activités sur le terrain pour ancrer les acquis.</p>
-        </div>
+      <article class="arche">
+        <h3>Pour vous, seniors</h3>
+        <p>Cours, conversations, jeux le matin, déjeuners dans le centre ville, visites l'après-midi.</p>
       </article>
-
-      <article class="feature-card">
-        <div class="feature-icon">3</div>
-        <div class="feature-content">
-          <h3 data-i18n="feature3_title">Établir des relations durables</h3>
-          <p data-i18n="feature3_desc">Suivi personnalisé et retours réguliers pour maintenir la motivation.</p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <div class="feature-icon">4</div>
-        <div class="feature-content">
-          <h3 data-i18n="feature4_title">Optimiser avec des analyses</h3>
-          <p data-i18n="feature4_desc">Suivi de progression et bilans pour ajuster le parcours pédagogique.</p>
-        </div>
+      <article class="arche">
+        <h3>Un accueil à l'écoute</h3>
+        <p>De vos besoins et de vos envies dans une ambiance paisible et joviale.</p>
       </article>
     </div>
   </section>
 
-  <!-- About section -->
-  <section class="about container" aria-label="À propos">
+  <!-- À propos simplifié (maintien section "qui suis-je ?" succincte ici, tu pourras créer onglet dédié) -->
+  <section class="about container" aria-label="Présentation">
     <div class="about-inner">
       <div class="about-content">
-        <h2 data-i18n="about_title">Qui suis-je ?</h2>
-        <p data-i18n="about_p1">Après des études de Langues et Civilisation Espagnoles à Bordeaux III, Madrid et Séville, l'obtention du CAPES (capacité enseignement secondaire), des années consacrées à l'enseignement de l'espagnol à Arras 62, Rambouillet 78, c'est dans les Pyrénées ariégeoises que j'ai choisi de m'installer durablement en 2004.</p>
-        <p data-i18n="about_p2">Une stabilité géographique toutefois marquée par une mobilité professionnelle qui m'ont conduite à des postes d'encadrement tels que coordonnatrice pédagogique d'un CFA et proviseure adjointe en lycée.</p>
-        <p data-i18n="about_p3">Le fil conducteur de ma carrière ? La curiosité intellectuelle, le goût des autres et la communication. Toujours animée par un vif intérêt pour la langue espagnole et les différentes cultures que je nourris en voyageant régulièrement, en lisant, en donnant bénévolement des cours de FLE dans un centre social, je commence à répondre à différentes sollicitations pour des cours individuels de FLE, d'espagnol.</p>
-        <p data-i18n="about_p4">Puis c'est LA rencontre avec Corine de VALORME, prête à passer le flambeau. Et me voici donc à parfaire mes connaissances de la didactique du FLE : MOOC de l'université de Liège, exploration de sites Internet dédiés et enfin préparation de séquences pédagogiques. C'est donc avec enthousiasme que je vous propose aujourd'hui de mettre mon dynamisme et mes compétences au service de vos envies d'apprentissage et de découverte de cette belle terre d'accueil qu'est l'Ariège.</p>
+        <h2>Qui suis-je ?</h2>
+        <p>Après des études de Langues et Civilisation Espagnoles à Bordeaux III, Madrid et Séville, l'obtention du CAPES (capacité enseignement secondaire), des années consacrées à l'enseignement de l'espagnol à Arras 62, Rambouillet 78, c'est dans les Pyrénées ariégeoises que j'ai choisi de m'installer durablement en 2004.</p>
+        <p>Une stabilité géographique toutefois marquée par une mobilité professionnelle qui m'ont conduite à des postes d'encadrement tels que coordonnatrice pédagogique d'un CFA et proviseure adjointe en lycée.</p>
+        <p>Le fil conducteur de ma carrière ? La curiosité intellectuelle, le goût des autres et la communication. Toujours animée par un vif intérêt pour les langues et les différentes cultures que je nourris en voyageant régulièrement, en m'impliquant dans la vie associative locale, en lisant...</p>
+        <p>La naissance du projet ? C'est en donnant bénévolement des cours de FLE dans un centre social que je commence à répondre à différentes sollicitations pour des cours individuels de FLE. Puis c'est LA rencontre avec Corine de VALORME, prête à passer le flambeau. Et me voici donc à parfaire mes connaissances de la didactique du FLE : MOOC de l'université de Liège, exploration de sites Internet dédiés et enfin préparation de séquences pédagogiques.</p>
+        <p>C'est donc avec enthousiasme que je vous propose aujourd'hui de mettre mon dynamisme et mes compétences au service de vos envies d'apprentissage et de découverte de cette belle terre d'accueil qu'est l'Ariège.</p>
       </div>
       <div class="about-images">
         <img src="assets/images/photo_foix.webp" alt="Foix Ariège" class="about-image">
       </div>
     </div>
   </section>
-  <!-- Testimonials -->
-  <section class="testimonials container" aria-label="Témoignages">
-    <h2 data-i18n="testimonials_title">Témoignages</h2>
-    <div class="grid-3">
-      <blockquote class="card" data-i18n="testimonial_1">« Excellente immersion, progression rapide. »<footer>— Maria</footer></blockquote>
-      <blockquote class="card" data-i18n="testimonial_2">« Programme bien structuré et activités enrichissantes. »<footer>— John</footer></blockquote>
-      <blockquote class="card" data-i18n="testimonial_3">« Ambiance chaleureuse et professeure très attentive. »<footer>— Anna</footer></blockquote>
-    </div>
-  </section>
+
+  <!-- Section Témoignages supprimée conformément à la demande -->
 
   <!-- Contact teaser -->
   <section class="container contact-teaser" aria-label="Contact rapide">
     <div class="contact-teaser-inner">
       <div>
-        <h2 data-i18n="contact_title">Contact</h2>
-        <p data-i18n="contact_intro">Pour toute question ou réservation, écrivez‑nous.</p>
+        <h2>Contact</h2>
+        <p>Pour toute question ou réservation, écrivez‑nous.</p>
       </div>
       <div>
-        <a href="contact.html" class="btn-cta" data-i18n="contact_button">Nous contacter</a>
+        <a href="contact.html" class="btn-cta">Nous contacter</a>
       </div>
     </div>
   </section>
@@ -158,7 +129,7 @@
       <div class="footer-brand">
         <a href="index.html" class="footer-logo"><strong class="logo-mark">Learn French in Foix</strong></a>
         <div class="join-us">
-          <span class="join-title" data-i18n="join_title">REJOIGNEZ‑NOUS</span>
+          <span class="join-title">REJOIGNEZ‑NOUS</span>
           <div class="socials" aria-label="Réseaux sociaux">
             <a href="https://facebook.com" class="social" aria-label="Facebook" title="Facebook">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3V22c4.78-.8 8.44-4.94 8.44-9.93z"/></svg>
@@ -175,30 +146,26 @@
 
       <nav class="footer-nav" aria-label="Navigation du pied de page">
         <ul class="nav-column">
-          <li><a href="index.html" data-i18n="nav_home">ACCUEIL</a></li>
-          <li><a href="cours.html" data-i18n="nav_courses">STAGES & COURS</a></li>
-          <li><a href="niveaux.html" data-i18n="nav_levels">NIVEAUX</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="cours.html">STAGES & COURS</a></li>
+          <li><a href="niveaux.html">NIVEAUX</a></li>
         </ul>
 
         <ul class="nav-column">
-          <li><a href="tarifs.html" data-i18n="nav_prices">TARIFS</a></li>
-          <li><a href="contact.html" data-i18n="nav_contact">CONTACT</a></li>
+          <li><a href="tarifs.html">TARIFS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
           <li><a href="mentions-legales.html">MENTIONS LÉGALES</a></li>
         </ul>
       </nav>
     </div>
 
-      <div class="footer-bottom container">
-      <p data-i18n="footer_copyright">Copyright © 2025 Learn French in Foix. Tous droits réservés.</p>
-      
+    <div class="footer-bottom container">
+      <p>Copyright © 2025 Learn French in Foix. Tous droits réservés.</p>
     </div>
   </footer>
 
-
-
   <!-- Script (thème + langue + nav mobile) -->
   <script src="assets/js/app.js"></script>
+
 </body>
 </html>
-
-
