@@ -201,10 +201,59 @@ p{margin:0;color:var(--muted)}
 /* -------------------------
    Features grid (4 items)
    ------------------------- */
-.features{padding:48px 0}
-.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.features{padding:48px 0}.features-grid,
+.arches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 24px;
+  margin-top: 40px;
+}
+
 @media(max-width:1100px){.features-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.features-grid{grid-template-columns:1fr}}
+.arche,
+.feature-card {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  min-height: 280px; /* carré visuel */
+  box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arche:hover,
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(15,23,42,0.12);
+  border-color: var(--primary);
+}
+.hero-sub {
+  color: var(--muted);
+  font-size: 1.3rem;   /* plus petit que le H1 */
+  font-weight: 600;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.arche h3,
+.feature-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.arche p,
+.feature-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
 
 .feature-card{text-align: justify;display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(15,23,42,0.04);transition:transform var(--transition)}
 .feature-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(15,23,42,0.08)}
@@ -469,6 +518,7 @@ img{max-width:100%;height:auto;display:block}
 .fade-in{animation:floatUp .6s ease both}
 
 /* End of file */
+
 
 
 
