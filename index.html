@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="page_title">Learn French in Foix — Site officiel</title>
+  <title>Learn French in Foix — Site officiel</title>
   <meta name="description" content="Stages immersifs et cours individuels de FLE à Foix. Progresser rapidement en français." />
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Preload hero image -->
-  <link rel="preload" as="image" href="assets/images/photo_foix.webp" />
+  <!-- Preload hero images -->
+  <link rel="preload" as="image" href="assets/images/chateau_foix.webp" />
+  <link rel="preload" as="image" href="assets/images/carte-france.png" />
 </head>
 <body>
   <!-- Header -->
@@ -21,12 +22,12 @@
       <nav class="nav" aria-label="Navigation principale">
         <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
         <ul id="primary-menu" class="nav-list">
-          <li><a href="index.html" class="active" data-i18n="nav_home">Accueil</a></li>
-          <li><a href="cours.html" data-i18n="nav_courses">Stages & Cours</a></li>
-          <li><a href="niveaux.html" data-i18n="nav_levels">Niveaux</a></li>
-          <li><a href="tarifs.html" data-i18n="nav_prices">Tarifs</a></li>
-          <li><a href="qui-suis-je.html" data-i18n="nav_about">Qui suis-je ?</a></li>
-          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="cours.html">Stages & Cours</a></li>
+          <li><a href="niveaux.html">Niveaux</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
 
@@ -41,10 +42,10 @@
   <!-- Bandeau château -->
   <section class="hero hero-chateau">
     <div class="overlay">
-      <h1 id="hero-title" class="hero-title" data-i18n="hero_title">
+      <h1 id="hero-title" class="hero-title hero-left-title">
         Cours intensifs de français en immersion pour adultes,
       </h1>
-      <h2 class="hero-sub" data-i18n="hero_subtitle">
+      <h2 class="hero-sub">
         De une à deux semaines.<br>
         À Foix, dans le Sud-Ouest de la France, dans les Pyrénées, entre Toulouse et l’Andorre
       </h2>
@@ -52,12 +53,17 @@
     </div>
   </section>
 
-  <!-- Bandeau stagiaires -->
+  <!-- Bandeau stagiaires avec photo modèle -->
   <section class="hero hero-stagiaires">
     <div class="overlay">
-      <h2>Apprendre ensemble dans une ambiance conviviale</h2>
+      <!-- Fond défini en CSS -->
     </div>
   </section>
+
+  <!-- Titre centré au-dessus des arches -->
+  <h2 class="stagiaires-title">
+    Apprendre ensemble dans une ambiance conviviale
+  </h2>
 
   <!-- Features (arches sous forme de cartes carrées) -->
   <section class="features container" aria-label="Fonctionnalités">
@@ -65,8 +71,8 @@
       <article class="feature-card">
         <div class="feature-icon">1</div>
         <div class="feature-content">
-          <h3 data-i18n="feature1_title">Une Vieille ville pittoresque</h3>
-          <p data-i18n="feature1_desc">
+          <h3>Une Vieille ville pittoresque</h3>
+          <p>
             Restaurants, cafés, boutiques, artisanat, gare à quelques minutes à pied de la salle de cours. Pas besoin de voiture pendant votre stage.
           </p>
         </div>
@@ -75,8 +81,8 @@
       <article class="feature-card">
         <div class="feature-icon">2</div>
         <div class="feature-content">
-          <h3 data-i18n="feature2_title">Pour vous, seniors</h3>
-          <p data-i18n="feature2_desc">
+          <h3>Pour vous, seniors</h3>
+          <p>
             Cours, conversations, jeux le matin, déjeuners dans le centre-ville, visites l’après-midi.
           </p>
         </div>
@@ -85,8 +91,8 @@
       <article class="feature-card">
         <div class="feature-icon">3</div>
         <div class="feature-content">
-          <h3 data-i18n="feature3_title">Un accueil à l'écoute</h3>
-          <p data-i18n="feature3_desc">
+          <h3>Un accueil à l'écoute</h3>
+          <p>
             Un accueil à l'écoute de vos besoins et de vos envies dans une ambiance paisible et joviale.
           </p>
         </div>
@@ -96,11 +102,11 @@
 
   <!-- Testimonials -->
   <section class="testimonials container" aria-label="Témoignages">
-    <h2 data-i18n="testimonials_title">Témoignages</h2>
+    <h2>Témoignages</h2>
     <div class="grid-3">
-      <blockquote class="card" data-i18n="testimonial_1">« Excellente immersion, progression rapide. »<footer>— Maria</footer></blockquote>
-      <blockquote class="card" data-i18n="testimonial_2">« Programme bien structuré et activités enrichissantes. »<footer>— John</footer></blockquote>
-      <blockquote class="card" data-i18n="testimonial_3">« Ambiance chaleureuse et professeure très attentive. »<footer>— Anna</footer></blockquote>
+      <blockquote class="card">« Excellente immersion, progression rapide. »<footer>— Maria</footer></blockquote>
+      <blockquote class="card">« Programme bien structuré et activités enrichissantes. »<footer>— John</footer></blockquote>
+      <blockquote class="card">« Ambiance chaleureuse et professeure très attentive. »<footer>— Anna</footer></blockquote>
     </div>
   </section>
 
@@ -108,11 +114,11 @@
   <section class="container contact-teaser" aria-label="Contact rapide">
     <div class="contact-teaser-inner">
       <div>
-        <h2 data-i18n="contact_title">Contact</h2>
-        <p data-i18n="contact_intro">Pour toute question ou réservation, écrivez‑nous.</p>
+        <h2>Contact</h2>
+        <p>Pour toute question ou réservation, écrivez‑nous.</p>
       </div>
       <div>
-        <a href="contact.html" class="btn-cta" data-i18n="contact_button">Nous contacter</a>
+        <a href="contact.html" class="btn-cta">Nous contacter</a>
       </div>
     </div>
   </section>
@@ -123,7 +129,7 @@
       <div class="footer-brand">
         <a href="index.html" class="footer-logo"><strong class="logo-mark">Learn French in Foix</strong></a>
         <div class="join-us">
-          <span class="join-title" data-i18n="join_title">REJOIGNEZ‑NOUS</span>
+          <span class="join-title">REJOIGNEZ‑NOUS</span>
           <div class="socials" aria-label="Réseaux sociaux">
             <a href="https://facebook.com" class="social" aria-label="Facebook" title="Facebook"></a>
             <a href="https://instagram.com" class="social" aria-label="Instagram" title="Instagram"></a>
@@ -134,21 +140,21 @@
 
       <nav class="footer-nav" aria-label="Navigation du pied de page">
         <ul class="nav-column">
-          <li><a href="index.html" data-i18n="nav_home">ACCUEIL</a></li>
-          <li><a href="cours.html" data-i18n="nav_courses">STAGES & COURS</a></li>
-          <li><a href="niveaux.html" data-i18n="nav_levels">NIVEAUX</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="cours.html">STAGES & COURS</a></li>
+          <li><a href="niveaux.html">NIVEAUX</a></li>
         </ul>
 
         <ul class="nav-column">
-          <li><a href="tarifs.html" data-i18n="nav_prices">TARIFS</a></li>
-          <li><a href="contact.html" data-i18n="nav_contact">CONTACT</a></li>
+          <li><a href="tarifs.html">TARIFS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
           <li><a href="mentions-legales.html">MENTIONS LÉGALES</a></li>
         </ul>
       </nav>
     </div>
 
     <div class="footer-bottom container">
-      <p data-i18n="footer_copyright">Copyright © 2025 Learn French in Foix. Tous droits réservés.</p>
+      <p>Copyright © 2025 Learn French in Foix. Tous droits réservés.</p>
     </div>
   </footer>
 
