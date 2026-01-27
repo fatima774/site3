@@ -1,516 +1,296 @@
 /* ==========================================================
    assets/css/style.css
-   Thème : "Dark Mode" inspiré de la photo envoyée
-   Couleurs : Fond Noir/Gris, Texte Blanc, Accents Orange Vif
-   Hero : Image en fond avec effet flou + Titre centré
+   Feuille de style complète unifiée — Design original
+   MODIFICATION : Hero section style "Photo Streetwear" (Fond + Flou)
    ========================================================== */
 
 /* Import police */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
 
 /* -------------------------
-   Variables de thème (Style Photo)
+   Variables de thème (ORIGINALES)
    ------------------------- */
 :root {
-  /* Palette inspirée de l'image fournie */
-  --bg: #121212;           /* Fond général très sombre */
-  --surface: #1E1E1E;      /* Fond des cartes (gris foncé) */
-  --text: #FFFFFF;         /* Texte blanc pur */
-  --muted: #B0B0B0;        /* Texte gris clair pour les paragraphes */
+  --bg: #FFF8F2;           /* fond très clair, neutre */
+  --surface: #FFFFFF;      /* cartes et sections */
+  --text: #1A2B3C;         /* texte principal bleu foncé/gris */
+  --muted: #7A7A7A;        /* texte secondaire, gris chaud */
 
-  /* Orange Vif (Comme le logo et bouton sur la photo) */
-  --primary: #FF6600;      
-  --primary-600: #E65500;  
-  --accent: #FF8533;       
-  
-  --cta: #FF6600;          /* Boutons d'action */
-  --cta-600: #E65500;      /* Hover boutons */
+  /* Couleurs principales */
+  --primary: #FFB87C;      /* orange pâle dominant */
+  --primary-600: #FFA15A;  /* orange un peu plus foncé pour hover */
+  --accent: #A3D5FF;       /* bleu pastel secondaire */
+  --cta: #FFB87C;          /* CTA orange pâle */
+  --cta-600: #FFA15A;      /* hover des boutons */
 
   /* Bordures et ombres */
-  --border: #333333;
-  --shadow: 0 24px 60px rgba(0,0,0,0.5);
-  --radius: 0px; /* Style plus "carré/sharp" comme sur la photo, ou garde 16px si tu préfères arrondi */
+  --border: #E8E2DE;
+  --shadow: 0 24px 60px rgba(15,23,42,0.08);
+  --radius: 16px;
 
   --transition: 200ms cubic-bezier(.2,.9,.2,1);
   --max-width: 1200px;
 
-  --base-font: 'Inter', system-ui, -apple-system, sans-serif;
-  --h1-size: clamp(2.8rem, 6vw, 4.5rem); /* Titres très gros comme "Puma Triple Black" */
-  --h2-size: clamp(1.8rem, 3vw, 2.5rem);
-  --h3-size: 1.2rem;
+  --base-font: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --h1-size: clamp(2.4rem, 5.2vw, 3.6rem);
+  --h2-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  --h3-size: 1.1rem;
 }
 
 /* -------------------------
    Reset & base
    ------------------------- */
 * { box-sizing: border-box; }
-
-html {
-  font-family: var(--base-font);
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
-
-a { color: inherit; text-decoration: none; transition: var(--transition); }
-ul { list-style: none; padding: 0; margin: 0; }
-
-.container {
-  width: min(94%, var(--max-width));
-  margin: 0 auto;
-}
+html { font-family: var(--base-font); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+.container { width: min(94%, var(--max-width)); margin: 0 auto; }
 
 /* Typographie */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text); /* Blanc par défaut maintenant */
-  margin-top: 0;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: var(--h1-size);
-  line-height: 1.1;
-  text-transform: uppercase; /* Comme sur la photo */
-  letter-spacing: -1px;
-}
-
-h2 {
-  font-weight: 800;
-  font-size: var(--h2-size);
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: var(--h3-size);
-  color: var(--primary); /* Titres des cartes en orange */
-}
-
-p {
-  color: var(--muted);
-  text-align: justify; /* Ta demande spécifique */
-  margin-bottom: 16px;
-}
+h1, h2, h3, h4, h5, h6 { color: var(--text); margin-top: 0; }
+h1 { font-weight: 900; font-size: var(--h1-size); line-height: 1.1; margin-bottom: 12px; }
+h2 { font-weight: 800; font-size: var(--h2-size); margin-bottom: 10px; }
+h3 { font-weight: 800; font-size: var(--h3-size); margin-bottom: 8px; }
+p { margin: 0; color: var(--muted); text-align: justify; }
 
 /* -------------------------
-   Header / Nav (Style Barre Noire + Logo Orange)
+   Header / Nav
    ------------------------- */
 .header {
-  background: #000000; /* Noir pur comme la barre du haut sur la photo */
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 0; /* Padding géré à l'intérieur pour coller au style */
+  position: sticky; top: 0; z-index: 120; padding: 18px 0;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.02);
 }
+.navbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.logo { font-weight: 900; color: var(--primary-600); font-size: 1.15rem; } /* Couleur logo ajustée pour lisibilité */
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-}
-
-.logo {
-  font-weight: 900;
-  color: #FFF;
-  background: var(--primary); /* Fond orange pour le logo comme "Shelflife" */
-  height: 70px;
-  display: flex;
-  align-items: center;
-  padding: 0 24px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin-left: -3%; /* Pour coller au bord gauche du container si besoin, ou ajuster */
-}
-
-.nav { display: flex; align-items: center; }
-
+.nav { display: flex; align-items: center; gap: 12px; }
 .nav-list {
-  display: flex;
-  gap: 24px;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 14px;
+  list-style: none;
+  margin: 0; padding: 0;
 }
-
 .nav-list a {
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #FFF;
-  text-transform: uppercase;
-  padding: 8px 0;
-  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all var(--transition);
+  background: rgba(255, 184, 124, 0.1);
 }
-
 .nav-list a:hover, .nav-list a.active {
-  color: var(--primary);
-  border-bottom-color: var(--primary);
+  background: var(--cta);
+  color: #071026;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(15,79,230,0.12);
 }
-
-.nav-toggle { display: none; }
+.nav-toggle { display: none !important; }
 
 /* Sélecteur de langue */
 .lang-selector {
-  background: #000;
-  color: #fff;
-  border: 1px solid #333;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
 @media(max-width: 920px) {
-  .nav-toggle {
-    display: block;
-    background: transparent;
-    border: 1px solid var(--text);
-    color: var(--text);
-    padding: 8px 12px;
-    cursor: pointer;
-  }
-  .nav-list {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: #000;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-  }
-  #primary-menu.open { display: flex; }
-  .logo { margin-left: 0; }
+  .nav-list { flex-direction: column; gap: 12px; }
+  .nav-toggle { display: block !important; }
 }
+
 
 /* -------------------------
-   HERO SECTION (Comme la photo : Image Fond + Texte Centré)
+   HERO MODIFIÉ (Style Photo : Fond Flou + Titre)
    ------------------------- */
 .hero {
-  position: relative;
-  width: 100%;
-  min-height: 85vh; /* Hauteur presque plein écran */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 0;
-  margin-bottom: 40px;
-}
-
-/* L'image spécifique de Foix en arrière-plan */
-.hero-chateau {
-  /* IMPORTANT: Assure-toi que le chemin d'image est correct par rapport à ton fichier CSS */
+  /* On utilise l'image du château comme fond global de la section */
   background-image: url('../images/territoires-ariege-pyrenees-foix-01-530x0.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  /* Hauteur forcée pour ressembler à l'affiche */
+  min-height: 80vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 40px;
 }
 
-/* L'effet "Flou" et sombre sur l'image */
-.hero-chateau::before {
+/* L'effet de flou et d'assombrissement par-dessus l'image */
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Assombrit l'image de 50% */
-  backdrop-filter: blur(4px);      /* Ajoute le flou demandé */
+  background: rgba(0, 0, 0, 0.4); /* Assombrit l'image */
+  backdrop-filter: blur(8px);      /* Ajoute le flou */
   z-index: 1;
 }
 
-/* Conteneur du texte par dessus l'image */
+/* Le contenu texte passe par-dessus le flou */
 .hero .overlay {
   position: relative;
-  z-index: 2; /* Au dessus du flou */
+  z-index: 2;
   text-align: center;
   max-width: 900px;
   padding: 0 20px;
 }
 
+/* On force le texte du Hero en blanc pour le contraste sur la photo */
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  color: #FFF;
-  margin-bottom: 16px;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Pour bien détacher le texte */
+  color: #FFFFFF;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  text-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Ombre portée pour lisibilité */
+  margin-bottom: 24px;
 }
 
 .hero-sub {
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 32px;
-  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  opacity: 0.95;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-/* Carte de France dans le hero (si présente) */
+/* On cache l'image de la carte car elle est maintenant remplacée par le background */
 .hero-map {
-  display: none; /* Je la cache car sur le style "Photo Streetwear", elle gênerait le look épuré. Enlève cette ligne si tu veux la garder. */
+  display: none;
 }
 
-/* Boutons CTA dans le Hero */
-.btn-cta {
-  display: inline-block;
-  background: transparent;
-  color: #FFF;
-  border: 2px solid #FFF;
-  padding: 14px 32px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.btn-cta:hover {
-  background: #FFF;
-  color: #000;
-}
-
-/* Si tu veux un bouton orange style "Find out more" de la photo : */
-.hero .btn-cta {
-  border-color: var(--primary);
-  background: rgba(0,0,0,0.3);
-}
-.hero .btn-cta:hover {
-  background: var(--primary);
-  color: #FFF;
-  border-color: var(--primary);
+/* Ajustement si tu as une 2ème section hero (stagiaires) */
+.hero-stagiaires {
+  display: none; /* On cache la 2ème section hero pour ne garder que la principale modifiée */
 }
 
 
 /* -------------------------
-   Section Stagiaires / Features (Arches)
+   Features / Arches (Reste du design original)
    ------------------------- */
 .stagiaires-title {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 40px;
   color: var(--text);
+  font-size: var(--h2-size);
 }
 
-.features { padding: 40px 0 80px; }
-
+.features { padding: 48px 0; }
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-top: 40px;
 }
+@media(max-width: 1100px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+@media(max-width: 600px) { .features-grid { grid-template-columns: 1fr; } }
 
 .feature-card {
   background: var(--surface);
-  border: 1px solid #333; /* Bordure sombre */
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  min-height: 280px;
+  box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
   gap: 16px;
-  transition: transform 0.3s;
 }
-
 .feature-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--primary); /* Bordure orange au survol */
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(15,23,42,0.12);
+  border-color: var(--primary);
 }
-
 .feature-icon {
-  font-size: 2rem;
-  color: var(--primary);
-  font-weight: 900;
-  margin-bottom: 8px;
+  width: 50px; height: 50px;
+  background: var(--primary);
+  border-radius: 50%;
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 1.2rem;
 }
-
-.feature-content h3 {
-  margin-bottom: 12px;
-  color: #FFF;
-}
-
-.feature-content p {
-  color: var(--muted);
-  text-align: justify;
-  font-size: 0.95rem;
-}
-
-@media(max-width: 900px) {
-  .features-grid { grid-template-columns: 1fr; }
-}
+.feature-content h3 { color: var(--primary-600); }
+.feature-content p { font-size: 0.95rem; color: var(--muted); }
 
 /* -------------------------
-   Témoignages
+   Testimonials
    ------------------------- */
-.testimonials { padding: 60px 0; background: #0d0d0d; /* Un peu plus sombre */ }
-.testimonials h2 { text-align: center; margin-bottom: 40px; }
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.testimonials .card {
+.testimonials { padding: 36px 0; }
+.testimonials h2 { margin-bottom: 24px; text-align: center; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media(max-width: 900px) { .grid-3 { grid-template-columns: 1fr; } }
+.card {
   background: var(--surface);
   padding: 24px;
+  border-radius: 12px;
   border: 1px solid var(--border);
-  position: relative;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.04);
+  color: var(--text);
+  font-style: italic;
 }
-
-.testimonials .card::before {
-  content: "“";
-  font-size: 4rem;
-  color: var(--primary);
-  opacity: 0.3;
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  font-family: serif;
-}
-
-.testimonials footer {
-  margin-top: 16px;
-  font-weight: 700;
-  color: var(--primary);
-  text-align: right;
-}
-
-@media(max-width: 800px) {
-  .grid-3 { grid-template-columns: 1fr; }
-}
+.card footer { margin-top: 10px; font-weight: 700; color: var(--primary-600); font-style: normal; text-align: right; }
 
 /* -------------------------
-   Contact Teaser
+   Contact teaser
    ------------------------- */
-.contact-teaser {
-  background: var(--primary);
-  padding: 60px 0;
-  margin-top: 60px;
-}
+.contact-teaser { padding: 36px 0; margin-top: 40px; background: rgba(255, 184, 124, 0.1); border-radius: var(--radius); }
+.contact-teaser-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 0 24px; }
+@media(max-width: 700px) { .contact-teaser-inner { flex-direction: column; text-align: center; } }
 
-.contact-teaser-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.btn-cta {
+  background: var(--cta);
+  color: #071026;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-weight: 900;
+  box-shadow: 0 18px 40px rgba(15,79,230,0.12);
+  transition: transform var(--transition);
+  display: inline-block;
 }
-
-.contact-teaser h2 { color: #FFF; margin-bottom: 8px; }
-.contact-teaser p { color: rgba(255,255,255,0.9); }
-
-.contact-teaser .btn-cta {
-  background: #000;
-  color: #FFF;
-  border: none;
-}
-.contact-teaser .btn-cta:hover {
-  background: #FFF;
-  color: #000;
-}
-
-@media(max-width: 700px) {
-  .contact-teaser-inner { flex-direction: column; gap: 20px; text-align: center; }
-}
+.btn-cta:hover { transform: translateY(-4px); background: var(--cta-600); }
 
 /* -------------------------
    Footer
    ------------------------- */
 .site-footer {
-  background: #000;
-  border-top: 1px solid var(--border);
-  padding: 60px 0 20px;
-  color: var(--muted);
+  background: linear-gradient(180deg, var(--primary-600), #8daddf);
+  color: #fff;
+  padding: 36px 0 18px;
+  margin-top: 60px;
+  border-top-left-radius: 12px; border-top-right-radius: 12px;
 }
-
-.footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
-.footer-logo strong {
-  color: #FFF;
-  font-size: 1.5rem;
-}
-
-.join-title {
-  display: block;
-  margin: 20px 0 10px;
-  font-weight: 700;
-  color: var(--primary);
-  font-size: 0.9rem;
-}
-
-.socials { display: flex; gap: 10px; }
+.footer-top { display: flex; gap: 36px; align-items: flex-start; justify-content: space-between; padding: 18px 0; }
+.footer-brand { max-width: 420px; }
+.footer-logo .logo-mark { font-weight: 900; font-size: 1.15rem; color: #fff; }
+.join-title { display: block; margin-top: 12px; font-weight: 800; font-size: 0.9rem; margin-bottom: 8px; }
+.socials { display: flex; gap: 12px; }
 .social {
-  width: 40px; height: 40px;
-  background: #222;
-  display: flex; align-items: center; justify-content: center;
-  border-radius: 4px; /* Carré arrondi */
-  transition: 0.3s;
+  width: 44px; height: 44px; border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  display: grid; place-items: center;
 }
-.social:hover { background: var(--primary); color: #FFF; }
+.footer-nav { display: flex; gap: 36px; margin-left: auto; }
+.nav-column { list-style: none; padding: 0; margin: 0; }
+.nav-column li { margin: 6px 0; }
+.nav-column a { color: rgba(255,255,255,0.95); font-weight: 700; font-size: 0.9rem; }
+.footer-bottom { display: flex; justify-content: center; border-top: 1px solid rgba(255,255,255,0.2); padding: 14px 0; margin-top: 18px; font-size: 0.85rem; }
 
-.footer-nav { display: flex; gap: 60px; }
-.nav-column li { margin-bottom: 10px; }
-.nav-column a { color: var(--muted); font-size: 0.9rem; }
-.nav-column a:hover { color: var(--primary); }
-
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #222;
-  padding-top: 20px;
-  font-size: 0.85rem;
+@media(max-width: 900px) {
+  .footer-top { flex-direction: column; }
+  .footer-nav { margin-left: 0; flex-direction: column; gap: 20px; }
 }
 
 /* -------------------------
-   Pages Internes (Layouts Génériques)
+   Utilitaires
    ------------------------- */
-.page-hero { padding: 80px 0; border-bottom: 1px solid var(--border); }
-.prices-content, .courses-content, .levels-content { padding: 60px 0; }
-
-/* Tableaux (Tarifs/Horaires) style sombre */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--surface);
-}
-th {
-  background: #2a2a2a;
-  color: #FFF;
-  padding: 16px;
-  text-align: left;
-}
-td {
-  border-bottom: 1px solid var(--border);
-  padding: 16px;
-  color: var(--muted);
-}
-
-/* Formulaire Contact */
-input, textarea, select {
-  width: 100%;
-  background: #000;
-  border: 1px solid #333;
-  padding: 14px;
-  color: #FFF;
-  margin-bottom: 16px;
-  font-family: inherit;
-}
-input:focus, textarea:focus {
-  outline: none;
-  border-color: var(--primary);
-}
-
-.contact-info, .contact-panel {
-  background: var(--surface);
-  padding: 30px;
-  border: 1px solid var(--border);
-}
-
-/* Utilitaires */
 .hidden { display: none; }
-img { max-width: 100%; height: auto; }
+img { max-width: 100%; height: auto; display: block; }
