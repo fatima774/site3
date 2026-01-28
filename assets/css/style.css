@@ -18,11 +18,11 @@
    Variables de thème
    ------------------------- */
    p {
-    text-align: justify; /* ou left, right, center selon ton besoin */
+    text-align: center; /* ou left, right, center selon ton besoin */
 }
 /* Justifier tout le texte du site */
 p{
-    text-align: justify;
+    text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
     color: var(--salmon); /* remplace la couleur bleue */
@@ -205,7 +205,7 @@ p{margin:0;color:var(--muted)}
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/carte-france.png');
+  background-image: url('../images/carte-france.jpg');
   background-size: cover;
   background-position: center;
   filter: blur(1px); /* Reduce blur for less blurriness */
@@ -311,13 +311,19 @@ p{margin:0;color:var(--muted)}
 .feature-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(15,23,42,0.08)}
 .feature-icon{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900}
 
-.feature-content p{margin:0;color:var(--muted);font-size:0.95rem}
+.feature-content p{margin:0;color:var(--muted);font-size:0.95rem,}
 .feature-content h3 {
   font-size: 1.05rem;
   font-weight: 800;
   margin: 0 0 6px;
   text-align: left;
   line-height: 1.4;
+}
+
+.stagiaires-title {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 50px;
 }
 
 /* -------------------------
@@ -328,13 +334,114 @@ p{margin:0;color:var(--muted)}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media(max-width:900px){.grid-3{grid-template-columns:1fr}}
 .card{background:var(--surface);padding:18px;border-radius:12px;border:1px solid var(--border);box-shadow:0 8px 24px rgba(15,23,42,0.04);color:var(--text)}
+/* Container de la section (centrage global) */
+/* Container général identique aux autres sections */
+.container {
+  width: 100%;
+  max-width: 1200px; /* même max-width que tes autres sections */
+  margin: 0 auto;
+  padding: 0 16px;   /* espace latéral pour mobile */
+  box-sizing: border-box;
+}
 
-/* -------------------------
-   Contact teaser
-   ------------------------- */
+/* Section titre */
+.intro-section {
+  text-align: center;
+  padding: 40px 0 16px 0;
+}
+
+.intro-title {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 2.2rem;
+  font-weight: 800;
+
+}
+
+/* Section bulle */
+.intro-bubble {
+  display: flex;
+  justify-content: center; /* centre la bulle dans le container */
+  margin: 28px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Bulle intérieure : encadré avec fond, border, ombre */
+.intro-bubble-inner {
+  display: flex;
+  flex-direction: row;       /* desktop : icône + texte côte à côte */
+  align-items: center;
+  gap: 20px;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(15,23,42,0.06);
+  max-width: 600px;          /* largeur max comme les autres sections */
+  width: 100%;
+  margin: 0 -10px 0 ;    /* pousse fortement vers la droite */
+  box-sizing: border-box;
+  animation: fadeUp 0.52s ease both;
+}
+
+/* Icône */
+.intro-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  flex: 0 0 56px;
+}
+
+/* Texte */
+.intro-text {
+  text-align: center;
+}
+.intro-text p {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.btn-cta {
+  justify-content: center;
+}
+/* Bouton */
+.intro-cta {
+  display: inline-block;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+/* Animation fade-in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile : empilement et centrage texte + icône */
+@media (max-width: 800px) {
+  .intro-bubble-inner {
+    flex-direction: column;
+    align-items: center; /* centré horizontalement */
+    text-align: center;
+    padding: 16px;
+  }
+
+  .intro-text {
+    width: 100%;
+  }
+}
+
+
+
 .contact-teaser{padding:36px 0}
-.contact-teaser-inner{display:flex;justify-content:space-between;align-items:center;gap:16px}
-@media(max-width:700px){.contact-teaser-inner{flex-direction:column;align-items:flex-start}}
+.contact-teaser-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
 
 /* -------------------------
    Contact page specific (kept here for single-file)
@@ -357,6 +464,62 @@ label{font-weight:700;color:var(--text);font-size:0.95rem}
 input[type="text"],input[type="email"],textarea,select{padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text);font-size:1rem}
 textarea{min-height:160px;resize:vertical}
 .form-note{font-size:0.92rem;color:var(--muted);margin-top:6px}
+
+/* -------------------------
+   Mobile-specific improvements
+   (Only applied under threshold; desktop unchanged)
+   ------------------------- */
+@media (max-width:900px) {
+  /* prevent any horizontal scrolling on mobile */
+  body { overflow-x: hidden; }
+
+  /* Ensure container-like sections line up exactly with other sections */
+  .intro-section,
+  .intro-bubble,
+  .testimonials,
+  .features,
+  .contact-teaser,
+  .page-hero,
+  .about-content,
+  .courses-content,
+  .prices-content { width: 100%; box-sizing: border-box; padding-left: 3%; padding-right: 3%; }
+
+  /* Make images fluid and avoid overflow */
+  img, .about-image, .hero-right img { max-width: 100%; height: auto; display: block; }
+
+  /* Stack intro bubble content and balance spacing */
+  .intro-bubble-inner { flex-direction: column; align-items: stretch; gap: 12px; padding: 14px; }
+  .intro-icon { margin: 0 auto 6px auto; flex: 0 0 auto; }
+  .intro-text { width: 100%; }
+
+  /* Features / cards: single column for readability */
+  .features-grid, .arches-grid, .grid-3 { grid-template-columns: 1fr !important; }
+  .feature-card, .arche { padding: 16px; min-height: auto; }
+
+  /* Increase tap targets for CTAs */
+  .btn-cta, .btn-outline, .btn-submit { padding: 14px 18px; min-height: 48px; font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; }
+
+  /* Forms full width inputs */
+  input[type="text"], input[type="email"], textarea, select { width: 100%; box-sizing: border-box; }
+
+  /* Contact teaser stacking */
+  .contact-teaser-inner { flex-direction: column; align-items: center; text-align: center; }
+
+  /* Testimonials: single column */
+  .testimonials .grid-3 { grid-template-columns: 1fr; gap: 12px; }
+
+  /* Slightly increase base text size and line-height for readability */
+  p { font-size: 1rem; line-height: 1.6; }
+
+  /* Reduce oversized hero title on small screens only (desktop unchanged) */
+  .hero-title, h1 { font-size: clamp(1.8rem, 6vw, 2.6rem); }
+
+  /* Avoid heavy shadows/large min-heights on mobile for performance */
+  .feature-card, .card, .contact-info, .contact-panel { box-shadow: none; }
+
+  /* Ensure no absolute positioning creates overflow on mobile */
+  [style*="position:absolute"], [style*="position: fixed"] { max-width: 100%; }
+}
 .contact-actions{display:flex;gap:12px;align-items:center;margin-top:8px}
 .btn-submit{background:var(--cta);color:#071026;padding:12px 20px;border-radius:12px;font-weight:900;border:none;cursor:pointer;box-shadow:0 14px 36px rgba(15,79,230,0.12);transition:transform .18s ease,box-shadow .18s ease}
 .btn-submit:hover{transform:translateY(-3px);box-shadow:0 22px 48px rgba(15,79,230,0.16);background:var(--cta-600)}
@@ -369,10 +532,10 @@ input:focus,textarea:focus,select:focus{outline:3px solid color-mix(in oklab,var
    Footer
    ------------------------- */
 
-.site-footer{background:linear-gradient(180deg,var(--primary-600),#8daddf);color:#fff;padding:36px 0 18px;margin-top:48px;border-top-left-radius:12px;border-top-right-radius:12px}
+.site-footer{background:linear-gradient(180deg,#e8b98b,#aec1e1);color:#fff;padding:36px 0 18px;margin-top:48px;border-top-left-radius:12px;border-top-right-radius:12px}
 .footer-top{display:flex;gap:36px;align-items:flex-start;justify-content:space-between;padding:18px 0}
 .footer-brand{max-width:420px}
-.footer-logo .logo-mark{font-weight:900;font-size:1.15rem;color:#fff}
+.footer-logo .logo-mark{font-weight:900;font-size:1.15rem;color:#000000}
 .join-title{color:#ff3b30;font-weight:900;margin-bottom:8px}
 .socials{display:flex;gap:12px}
 .social{width:44px;height:44px;border-radius:8px;background:rgba(255,255,255,0.06);display:grid;place-items:center;color:#fff}
@@ -380,9 +543,9 @@ input:focus,textarea:focus,select:focus{outline:3px solid color-mix(in oklab,var
 .footer-nav{display:flex;gap:36px;margin-left:auto}
 .nav-column{list-style:none;padding:0;margin:0}
 .nav-column li{margin:6px 0}
-.nav-column a{color:rgba(255,255,255,0.95);font-weight:700}
+.nav-column a{color:rgba(0, 0, 0, 0.95);font-weight:700}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.06);padding:14px 0;margin-top:18px}
-.footer-bottom p{margin:0;color:rgba(255,255,255,0.78);font-size:0.95rem}
+.footer-bottom p{margin:0;color:rgba(0, 0, 0, 0.78);font-size:0.95rem}
 .credit-name{color:var(--accent);font-weight:800}
 @media(max-width:900px){.footer-top{flex-direction:column}.footer-nav{margin-left:0}.footer-bottom{flex-direction:column;align-items:flex-start;gap:8px}}
 
@@ -404,7 +567,7 @@ input:focus,textarea:focus,select:focus{outline:3px solid color-mix(in oklab,var
    Page Hero (for inner pages)
    ------------------------- */
 .page-hero{padding:48px 0;border-bottom:1px solid var(--border)}
-.page-hero h1{margin:0 0 12px;color:var(--text)}
+.page-hero h1{margin:0 0 12px;color:var(--text);text-align:center}
 .page-intro{color:var(--muted);font-size:1.1rem;margin:0;max-width:56ch;text-align:center}
 
 /* -------------------------
@@ -438,6 +601,20 @@ input:focus,textarea:focus,select:focus{outline:3px solid color-mix(in oklab,var
 .modalite-item p{margin:0;color:var(--muted);line-height:1.7}
 
 .schedule{margin-top:48px}
+
+/* -------------------------
+   Location section with Google Maps
+   ------------------------- */
+.location-section{padding:32px 0}
+.location-section h2{margin-bottom:18px;color:var(--text);text-align:center;display:flex;align-items:center;justify-content:center;gap:8px}
+.location-icon{font-size:1.5rem;display:inline-block}
+.location-content{background:var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:0 12px 30px rgba(15,23,42,0.06);padding:20px;overflow:hidden}
+.location-address{text-align:center;margin-bottom:14px}
+.location-address p{margin:0;color:var(--text);font-size:0.95rem;line-height:1.6}
+.location-map{position:relative;width:100%;padding-bottom:45%;height:0;overflow:hidden;border-radius:12px}
+.location-map iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px}
+@media(max-width:900px){.location-section{padding:24px 0}.location-content{padding:14px}.location-address{margin-bottom:12px}.location-address p{font-size:0.9rem}.location-map{padding-bottom:55%}}
+
 .schedule-subtitle{color:var(--muted);font-style:italic;margin-top:8px;margin-bottom:20px}
 .schedule-table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(15,23,42,0.04)}
 .schedule-table thead{background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff}
