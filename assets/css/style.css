@@ -66,12 +66,19 @@
 }
 
 /* 📱 Mobile */
+/* Pour écrans petits (smartphones) */
 @media (max-width: 600px) {
   .place-grid {
     grid-template-columns: 1fr; /* une seule colonne sur mobile */
     gap: 12px; /* un peu plus d'espacement si nécessaire */
   }
 
+
+
+  .place-grid {
+    gap: 8px;               /* encore plus compact */
+    max-width: 100%;
+  }
 
   .place-title {
     font-size: 1.15rem;
@@ -169,10 +176,10 @@ p{margin:0;color:var(--muted)}
   align-items: center;
   gap: 12px;
 }
-
+/* --- Navigation principale --- */
 .nav-list {
-  display: flex !important;          /* Toujours visible */
-  flex-direction: row !important;    /* Horizontal sur mobile aussi */
+  display: flex;          /* visible par défaut sur desktop */
+  flex-direction: row;
   gap: 14px;
   list-style: none;
   margin: 0;
@@ -210,16 +217,79 @@ p{margin:0;color:var(--muted)}
 }
 
 .nav-toggle {
-  display: none !important;  /* On cache complètement le bouton burger */
+  display: none;  /* desktop : on cache le bouton */
+  background: var(--cta);
+  color: #071026;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-/* Optionnel : sur petit écran, tu peux passer en vertical si tu veux */
-@media(max-width:920px){
+/* --- Menu responsive (mobile) --- */
+@media(max-width: 920px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* logo à gauche, boutons à droite */
+    align-items: center;
+    position: relative;
+  }
+
+  /* Groupe select + bouton menu */
+  .navbar > .lang-selector,
+  .navbar > .nav {
+    display: inline-flex;          /* alignement horizontal */
+    align-items: center;
+    gap: 8px;                     /* espace entre select et bouton */
+  }
+
+  /* Sélecteur de langue */
+  .lang-selector {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 150px;
+  }
+
+  /* Bouton hamburger */
+  .nav-toggle {
+    display: inline-block;
+    position: relative;  /* plus de absolute pour qu’il reste à côté */
+    margin: 0;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    background: var(--cta);
+    color: #071026;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* Menu vertical sous le header */
   .nav-list {
-    flex-direction: column; /* menu vertical sur mobile */
-    gap: 12px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;    /* sous le header */
+    right: 0;
+    width: 200px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    padding: 12px 0;
+    z-index: 1000;
+  }
+
+  /* Affichage menu quand le bouton est cliqué */
+  .nav-toggle[aria-expanded="true"] + .nav-list {
+    display: flex;
   }
 }
+
+
+
 
 /* -------------------------
    Hero (layout)
@@ -845,6 +915,7 @@ img{max-width:100%;height:auto;display:block}
 }
 
 
+
 /* -------------------------
    Small animations
    ------------------------- */
@@ -852,4 +923,3 @@ img{max-width:100%;height:auto;display:block}
 .fade-in{animation:floatUp .6s ease both}
 
 /* End of file */
-
