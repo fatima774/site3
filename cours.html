@@ -1,857 +1,284 @@
-/* ==========================================================
-   assets/css/style.css
-   Feuille de style complète unifiée — thème bleu-vert + CTA jaune
-   Inclut : typographie, header, hero (image responsive), features,
-   contact, footer, contrôles, accessibilité et petites animations.
-   Remplace entièrement ton fichier CSS par ce contenu.
-   ========================================================== */
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Les stages et cours intensifs - Learn French in Foix</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="header" role="banner">
+  <div class="container navbar">
+    <a class="logo" href="index.html">Foix Lingua</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <ul id="primary-menu" class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cours.html" class="active">Stages & Cours</a></li>
+        <li><a href="niveaux.html">Niveaux</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+             <li><a href="qui-suis-je.html">Qui suis-je ?</a></li> 
+        <li><a href="contact.html">Contact</a></li>
+       <!-- Ajout onglet -->
+      </ul>
+    </nav>
+    <div class="nav-actions">
+     
+    </div>
+    <select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue">
+      <option value="fr" selected>Français</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero container">
+    <h1>Stages et cours intensifs</h1>
+    <p>30h par semaine : cours, déjeuners, sorties et ateliers culturels.</p>
+  </section>
+<!-- juste après la section page-hero -->
+
+
+  <div class="container courses-content">
+<!-- Galerie photos côte à côte -->
+<div class="photo-gallery">
+  <div class="photo-block">
+    <img src="assets/images/stages-hero.jpg" alt="Cours intensif français">
+  </div>
+  <div class="photo-block">
+    <img src="assets/images/photo2.jpg" alt="Activité culturelle">
+  </div>
+</div>
+
+
+    <!-- Onglets STAGE & COURS avec 3 sous-onglets -->
+    <div class="courses-tabs">
+      <button class="tab-btn active" data-tab="cours-intensifs">Cours intensifs</button>
+      <button class="tab-btn" data-tab="cours-individuels">Cours individuels</button>
+      <button class="tab-btn" data-tab="immersion-prof">Immersion chez le professeur</button>
+    </div>
+
+    <!-- Cours intensifs - onglet 1 -->
+    <div id="tab-cours-intensifs" class="tab-content active">
+      <h2>Les stages intensifs ou cours collectifs de français</h2>
+
+      <div class="course-section">
+        <h3>Une formation basée sur le bien-être et la bienveillance</h3>
+        <p>La formation est conçue pour offrir un "bain de français", 30 heures par semaine.</p>
+
+        <div class="course-details">
+          <div class="course-card">
+            <h4>📚 Cours ludiques et pratiques</h4>
+            <p>Des cours ludiques basés sur la pratique orale à partir de documents authentiques, ponctués d'explications grammaticales. Individualisation de l'enseignement et attention aux personnes présentant des troubles DYS ou neuro atypiques.</p>
+          </div>
+
+          <div class="course-card">
+            <h4>🍽️ Déjeuners conviviaux</h4>
+            <p>Des déjeuners favorisant la conversation informelle, pris avec la professeure dans le centre-ville de Foix, adaptés aux contraintes alimentaires de chacun. Parfois rejoints par des amis pour écouter différents accents.</p>
+          </div>
+
+          <div class="course-card">
+            <h4>🚶 Sorties en ville</h4>
+            <p>Des sorties permettant de parler dans des situations réelles de communication en découvrant la ville et ses environs.</p>
+          </div>
+
+          <div class="course-card">
+            <h4>🎭 Activités culturelles</h4>
+            <p>Activités autour de la culture locale : cours de cuisine, dégustation de produits locaux, apéritifs-concerts, visites de ferme et atelier.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modalités -->
+      <div class="course-section modalites">
+        <h3>Modalités</h3>
+        <div class="modalite-item">
+          <h4>📅 Calendrier</h4>
+          <p>Les dates des stages intensifs en 2026 sont : 13-24 juillet (niveau B1), 17-28 août, 14-25 septembre, 2-23 octobre, 16-27 novembre, 14-18 décembre.</p>
+        </div>
+        <div class="modalite-item">
+          <h4>👥 Groupes réduits</h4>
+          <p>Groupes de maximum six étudiants de niveau similaire. Contactez-nous pour venir en groupe ou avec plusieurs niveaux.</p>
+        </div>
+        <div class="modalite-item">
+          <h4>⚠️ Cas particulier</h4>
+          <p>Si un seul étudiant est présent une semaine, le cours est maintenu au même tarif, avec 25h de cours au lieu de 30h.</p>
+        </div>
+      </div>
+
+      <!-- Semaine type modifiée -->
+      <div class="course-section schedule">
+        <h3>Semaine type</h3>
+        <p>Du lundi 09h00 au vendredi 17h00</p>
+        <table class="schedule-table" aria-describedby="Semaine type">
+          <thead>
+            <tr>
+              <th>Lundi</th>
+              <th>Mardi</th>
+              <th>Mercredi</th>
+              <th>Jeudi</th>
+              <th>Vendredi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>9h–12h</strong><br>Cours</td>
+              <td><strong>9h–12h</strong><br>Cours</td>
+              <td><strong>9h–12h</strong><br>Cours</td>
+              <td><strong>9h–12h</strong><br>Cours</td>
+              <td><strong>8h–10h</strong><br>Marché<br><strong>10h–12h</strong><br>Cours</td>
+            </tr>
+            <tr>
+              <td><strong>Déjeuner</strong><br>Ensemble</td>
+              <td><strong>Déjeuner</strong><br>Libre</td>
+              <td><strong>Déjeuner</strong><br>Libre</td>
+              <td><strong>Déjeuner</strong><br>Ensemble</td>
+              <td><strong>Déjeuner</strong><br>Ensemble</td>
+            </tr>
+            <tr>
+              <td><strong>14h–16h</strong><br>Visite / Activités</td>
+              <td><strong>14h–16h</strong><br>Visite / Activités</td>
+              <td><strong>14h–16h</strong><br>Visite / Activités</td>
+              <td><strong>14h–16h</strong><br>Visite / Activités</td>
+              <td><strong>14h–16h</strong><br>Visite / Activités</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Cours individuels - onglet 2 -->
+    <div id="tab-cours-individuels" class="tab-content">
+      <h2>Le cours individuel de français ou d'espagnol</h2>
+
+      <div class="course-section">
+        <h3>Pensé à partir de vos attentes</h3>
+        <p>Chaque cours suit une structure pédagogique éprouvée, adaptée à vos besoins spécifiques :</p>
+
+        <div class="individual-steps">
+          <div class="step-item">
+            <div class="step-number">A</div>
+            <div class="step-content">
+              <h4>Document d'amorce</h4>
+              <p>Un document sonore ou écrit permettant de faire émerger le vocabulaire et le point grammatical visés.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">B</div>
+            <div class="step-content">
+              <h4>Jeux de rôle</h4>
+              <p>Des jeux de rôle pour l'acquisition lexicale et grammaticale.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">C</div>
+            <div class="step-content">
+              <h4>Trace écrite</h4>
+              <p>Une trace écrite pour consolider vos apprentissages.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">D</div>
+            <div class="step-content">
+              <h4>Exercices d'entraînement</h4>
+              <p>Exercices d'entraînement pour le cours suivant, permettant de consolider vos acquis en autonomie.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-section modalites">
+        <h3>Modalités</h3>
+        <div class="modalite-item">
+          <h4>⏰ Horaire et fréquence</h4>
+          <p>Horaire et fréquence à définir ensemble selon vos disponibilités et vos objectifs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Immersion chez le professeur - onglet 3 -->
+    <div id="tab-immersion-prof" class="tab-content">
+      <h2>Immersion chez le professeur</h2>
+
+      <div class="course-section">
+        <p>15 heures de cours particuliers par semaine, des activités, des sorties à la carte, hébergement et pension complète.</p>
+        <p>La chambre, à l'étage de ma maison à Foix, est équipée d'une salle de bain et WC privatifs. Vous pourrez aussi profiter de mon jardin.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top container">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo"><strong class="logo-mark">Learn French in Foix</strong></a>
+      <div class="join-us">
+        <span class="join-title">REJOIGNEZ‑NOUS</span>
+        <div class="socials" aria-label="Réseaux sociaux">
+          <a href="https://www.facebook.com" target="_blank" class="social" aria-label="Facebook" title="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3V22c4.78-.8 8.44-4.94 8.44-9.93z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="social" aria-label="Instagram" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A3.8 3.8 0 1 0 15.8 12 3.8 3.8 0 0 0 12 8.2zm6.4-3.6a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="social" aria-label="LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.4-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24H17v-7.2c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8V24H8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigation du pied de page">
+      <ul class="nav-column">
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="cours.html" class="active">STAGES & COURS</a></li>
+        <li><a href="niveaux.html">NIVEAUX</a></li>
+      </ul>
+      <ul class="nav-column">
+        <li><a href="tarifs.html">TARIFS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="mentions-legales.html">MENTIONS LÉGALES</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>Copyright © 2025 Learn French in Foix. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+  // fallback pour gérer les onglets et sous-onglets au cas où app.js échouerait
+  (function(){
+    try {
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      if (tabBtns.length) {
+        tabBtns.forEach(btn => {
+          if (btn.dataset.hasFallback) return;
+          btn.addEventListener('click', function(){
+            try {
+              const tabName = this.getAttribute('data-tab');
+              document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+              tabBtns.forEach(b => b.classList.remove('active'));
+              const tabEl = document.getElementById('tab-' + tabName);
+              if (tabEl) tabEl.classList.add('active');
+              this.classList.add('active');
+              console.log('Fallback: tab switched to', tabName);
+            } catch(e) { console.warn(e); }
+          }, {passive:true});
+          btn.dataset.hasFallback = '1';
+        });
+      }
+    } catch(e) { console.warn(e); }
+  })();
+</script>
+</body>
+</html>
 
-/* Import police */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
-#primary-menu.open {
-  display: flex; /* ou block selon le layout */
-  flex-direction: column;
-  gap: 12px;
-}
-.about-content p {
-    text-align: justify; /* Justifier le texte dans la section "About" */
-}
-/* Section photos du lieu */
-/* Section photos du lieu */
-.place-section {
-  margin: 48px auto;
-  text-align: center;
-}
-
-.place-title {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--text);
-  margin-bottom: 18px;
-}
-
-/* Grille principale */
-.place-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;                 /* photos proches */
-  max-width: 880px;          /* taille maîtrisée */
-  margin: 0 auto;
-}
-
-/* Carte photo */
-.place-photo {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(15,23,42,0.05);
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.place-photo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 4 / 3;      /* tailles homogènes */
-}
-
-/* Hover desktop uniquement */
-@media (hover: hover) {
-  .place-photo:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(15,23,42,0.08);
-  }
-}
-
-/* 📱 Mobile */
-@media (max-width: 600px) {
-  .place-section {
-    margin: 36px auto;
-  }
-
-  .place-grid {
-    gap: 8px;               /* encore plus compact */
-    max-width: 100%;
-  }
-
-  .place-title {
-    font-size: 1.15rem;
-    margin-bottom: 14px;
-  }
-}
-
-
-/* -------------------------
-   Variables de thème
-   ------------------------- */
-   p {
-    text-align: center; /* ou left, right, center selon ton besoin */
-}
-/* Justifier tout le texte du site */
-p{
-    text-align: center;
-}
-h1, h2, h3, h4, h5, h6 {
-    color: var(--salmon); /* remplace la couleur bleue */
-}
-:root{
-      --bg: #FFF8F2;          /* fond très clair, neutre */
-  --surface: #FFFFFF;      /* cartes et sections */
-  --text: #1A2B3C;         /* texte principal bleu foncé/gris */
-  --muted: #7A7A7A;        /* texte secondaire, gris chaud */
-
-  /* Couleurs principales */
-  --primary: #FFB87C;      /* orange pâle dominant */
-  --primary-600: #FFA15A;  /* orange un peu plus foncé pour hover */
-  --accent: #A3D5FF;       /* bleu pastel secondaire */
-  --cta: #FFB87C;          /* CTA orange pâle */
-  --cta-600: #FFA15A;       /* hover des boutons */
-
-  /* Bordures et ombres */
-  --border: #E8E2DE;
-  --shadow: 0 24px 60px rgba(15,23,42,0.08);
-  --radius: 16px;
-
- 
-  --transition:200ms cubic-bezier(.2,.9,.2,1);
-  --max-width:1200px;
-
-  --base-font: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --h1-size: clamp(2.4rem, 5.2vw, 3.6rem);
-  --h2-size: clamp(1.6rem, 2.6vw, 2.2rem);
-  --h3-size: 1.1rem;
-}
-
-/* Dark theme */
-html[data-theme="dark"]{
-  --bg:#071026;
-  --surface:#0f1724;
-  --text:#e6eefc;
-  --muted:#98a2b3;
-
-  --primary:#FFA07A;
-  --primary-600:#FF8C69;
-  --accent:#FFDAB9;
-  --cta:#ffd85a;
-  --cta-600:#ffcf2a;
-
-  --border:#122033;
-  --shadow:0 20px 60px rgba(0,0,0,0.45);
-}
-
-/* -------------------------
-   Reset & base
-   ------------------------- */
-*{box-sizing:border-box}
-html{font-family:var(--base-font);-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);line-height:1.6}
-a{color:inherit;text-decoration:none}
-.container{width:min(94%,var(--max-width));margin:0 auto}
-
-/* Headings uniformes */
-h1{font-family:var(--base-font);font-weight:900;font-size:var(--h1-size);line-height:1.02;margin:0 0 12px;text-align:center}
-h2{font-family:var(--base-font);font-weight:800;font-size:var(--h2-size);margin:0 0 10px;text-align:center}
-h3{font-family:var(--base-font);font-weight:800;font-size:var(--h3-size);margin:0 0 8px;text-align:center}
-p{margin:0;color:var(--muted)}
-
-/* -------------------------
-   Header / Nav
-   ------------------------- */
-.header{
-  background:var(--surface);
-  border-bottom:1px solid var(--border);
-  position:sticky;top:0;z-index:120;padding:18px 0;
-  box-shadow: 0 6px 18px rgba(15,23,42,0.02);
-}
-.navbar{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{font-weight:900;color:var(--primary);font-size:1.15rem}
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.nav-list {
-  display: flex !important;          /* Toujours visible */
-  flex-direction: row !important;    /* Horizontal sur mobile aussi */
-  gap: 14px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list a {
-  padding: 10px 14px;
-  border-radius: 12px;
-  font-weight: 700;
-  transition: all var(--transition);
-  background: rgba(255, 184, 124, 0.1); /* léger fond orange pâle */
-}
-
-.nav-list a:hover {
-  background: var(--cta);
-  color: #071026;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(15,79,230,0.12);
-}
-
-.nav-cta {
-  background: var(--cta);
-  color: #071026;
-  padding: 10px 14px;
-  border-radius: 12px;
-  font-weight: 900;
-  box-shadow: 0 12px 30px rgba(15,79,230,0.12);
-  transition: all var(--transition);
-}
-
-.nav-cta:hover {
-  transform: translateY(-3px);
-  background: var(--cta-600);
-}
-
-.nav-toggle {
-  display: none !important;  /* On cache complètement le bouton burger */
-}
-
-/* Optionnel : sur petit écran, tu peux passer en vertical si tu veux */
-@media(max-width:920px){
-  .nav-list {
-    flex-direction: column; /* menu vertical sur mobile */
-    gap: 12px;
-  }
-}
-
-/* -------------------------
-   Hero (layout)
-   ------------------------- */
-.hero{padding:64px 0}
-.hero-inner{display:grid;grid-template-columns:1fr 520px;gap:36px;align-items:center}
-@media(max-width:1100px){.hero-inner{grid-template-columns:1fr 420px}}
-@media(max-width:880px){.hero-inner{grid-template-columns:1fr;gap:28px;padding:48px 0}}
-
-.hero-left{display:flex;flex-direction:column;justify-content:center;gap:14px}
-.hero-eyebrow{display:inline-block;background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff;padding:6px 12px;border-radius:999px;font-weight:800;margin-bottom:6px;font-size:0.9rem;animation:slideInLeft 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;transform:translateX(-30px);opacity:0}
-@keyframes slideInLeft{to{transform:translateX(0);opacity:1}}
-.hero-title{font-size:clamp(2.6rem,6.5vw,4.2rem);line-height:1;margin:0 0 12px;animation:slideInLeft 0.7s cubic-bezier(0.34,1.56,0.64,1) 0.1s forwards;transform:translateX(-30px);opacity:0}
-.hero-sub{color:var(--muted);font-size:1.05rem;max-width:56ch;margin-bottom:18px;animation:slideInLeft 0.8s cubic-bezier(0.34,1.56,0.64,1) 0.2s forwards;transform:translateX(-30px);opacity:0}
-
-.cta-row{display:flex;gap:14px;align-items:center}
-.btn-cta{background:var(--cta);color:#071026;padding:14px 22px;border-radius:12px;font-weight:900;box-shadow:0 18px 40px rgba(15,79,230,0.12);transition:transform var(--transition)}
-.btn-cta:hover{transform:translateY(-4px);background:var(--cta-600)}
-.btn-outline{padding:12px 18px;border-radius:12px;border:1px solid var(--border);font-weight:800;color:var(--text);background:transparent}
-
-.hero-features{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
-.hero-feature{background:rgba(15,79,230,0.04);padding:8px 12px;border-radius:999px;font-weight:700;color:var(--primary)}
-
-/* -------------------------
-   Hero image wrapper (responsive, shape, overlay)
-   ------------------------- */
-.hero-right{margin-top:40px;display:flex;align-items:center;justify-content:center;position:relative;perspective:1200px}
-
-
-
-/* -------------------------
-   Hero Château (background image with blur and gradient)
-   ------------------------- */
-.hero-chateau {
-  position: relative;
-  height: 70vh; /* Increased height for larger background image */
-  padding: 0; /* Override default hero padding */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Ensure blur doesn't overflow */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)); /* Fallback gradient */
-}
-
-.hero-chateau::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/carte-france.jpg');
-  background-size: cover;
-  background-position: center;
-  filter: blur(1px); /* Reduce blur for less blurriness */
-  z-index: 0; /* Behind the overlay */
-}
-
-.hero-chateau .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)); /* Lighter gradient to show image */
-  color: white; /* Text color */
-  text-align: center; /* Center text */
-  z-index: 1; /* Ensure overlay is above background */
-  padding: 20px; /* Add some padding */
-  box-sizing: border-box;
-}
-
-.hero-chateau h1, .hero-chateau h2 {
-  color: white;
-}
-
-
-
-/* -------------------------
-   About section
-   ------------------------- */
-.about{padding:64px 0}
-.about-inner{display:grid;grid-template-columns:1fr 520px;gap:48px;align-items:center}
-@media(max-width:1100px){.about-inner{grid-template-columns:1fr}}
-@media(max-width:880px){.about-inner{gap:32px}}
-.about-content{display:flex;flex-direction:column;gap:18px}
-.about-content h2{font-size:var(--h2-size);margin-bottom:12px;color:var(--text)}
-.about-content p{text-align:justify;color:var(--muted);line-height:1.8;font-size:1rem;margin:0}
-.about-images{display:flex;align-items:center;justify-content:center}
-.about-image{width:100%;max-width:520px;height:auto;border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--border);object-fit:cover}
-@media(max-width:880px){.about-image{max-width:100%;height:300px}}
-
-/* -------------------------
-   Features grid (4 items)
-   ------------------------- */
-.features{padding:48px 0}.features-grid,
-.arches-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
-  gap: 24px;
-  margin-top: 40px;
-}
-
-@media(max-width:1100px){.features-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.features-grid{grid-template-columns:1fr}}
-.arche,
-.feature-card {
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 16px;
-  padding: 28px;
-  text-align: center;
-  min-height: 280px; /* carré visuel */
-  box-shadow: 0 12px 30px rgba(15,23,42,0.08);
-  transition: transform var(--transition), box-shadow var(--transition);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.arche:hover,
-.feature-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(15,23,42,0.12);
-  border-color: var(--primary);
-}
-.hero-sub {
-  color: var(--muted);
-  font-size: 1.3rem;   /* plus petit que le H1 */
-  font-weight: 600;
-  margin-top: 8px;
-  line-height: 1.4;
-}
-
-.arche h3,
-.feature-card h3 {
-  font-size: 1.2rem;
-  font-weight: 800;
-  margin-bottom: 12px;
-  color: var(--primary);
-}
-.h3{
-  text-align: center;
-}
-.arche p,
-.feature-card p {
-  font-size: 0.95rem;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.feature-card{text-align: justify;display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(15,23,42,0.04);transition:transform var(--transition)}
-.feature-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(15,23,42,0.08)}
-.feature-icon{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900}
-
-.feature-content p{margin:0;color:var(--muted);font-size:0.95rem,}
-.feature-content h3 {
-  font-size: 1.05rem;
-  font-weight: 800;
-  margin: 0 0 6px;
-  text-align: left;
-  line-height: 1.4;
-}
-
-.stagiaires-title {
-  text-align: center;
-  margin-top: -20px;
-  margin-bottom: 50px;
-}
-
-/* -------------------------
-   Testimonials
-   ------------------------- */
-.testimonials{padding:36px 0}
-.testimonials h2{margin-bottom:14px;color:var(--text)}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:900px){.grid-3{grid-template-columns:1fr}}
-.card{background:var(--surface);padding:18px;border-radius:12px;border:1px solid var(--border);box-shadow:0 8px 24px rgba(15,23,42,0.04);color:var(--text)}
-/* Container de la section (centrage global) */
-/* Container général identique aux autres sections */
-.container {
-  width: 100%;
-  max-width: 1200px; /* même max-width que tes autres sections */
-  margin: 0 auto;
-  padding: 0 16px;   /* espace latéral pour mobile */
-  box-sizing: border-box;
-}
-
-/* Section titre */
-.intro-section {
-  text-align: center;
-  padding: 40px 0 16px 0;
-}
-
-.intro-title {
-  margin: 0 0 12px;
-  color: var(--text);
-  font-size: 2.2rem;
-  font-weight: 800;
-
-}
-
-/* Section bulle */
-.intro-bubble {
-  display: flex;
-  justify-content: center; /* centre la bulle dans le container */
-  margin: 28px 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Bulle intérieure : encadré avec fond, border, ombre */
-.intro-bubble-inner {
-  display: flex;
-  flex-direction: row;       /* desktop : icône + texte côte à côte */
-  align-items: center;
-  gap: 20px;
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 12px 30px rgba(15,23,42,0.06);
-  max-width: 600px;          /* largeur max comme les autres sections */
-  width: 100%;
-  margin: 0 -10px 0 ;    /* pousse fortement vers la droite */
-  box-sizing: border-box;
-  animation: fadeUp 0.52s ease both;
-}
-
-/* Icône */
-.intro-icon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #fff;
-  flex: 0 0 56px;
-}
-
-/* Texte */
-.intro-text {
-  text-align: center;
-}
-.intro-text p {
-  margin: 0;
-  color: var(--text);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-.btn-cta {
-  justify-content: center;
-}
-/* Bouton */
-.intro-cta {
-  display: inline-block;
-  margin-top: 12px;
-  justify-content: center;
-}
-
-/* Animation fade-in */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Mobile : empilement et centrage texte + icône */
-@media (max-width: 800px) {
-  .intro-bubble-inner {
-    flex-direction: column;
-    align-items: center; /* centré horizontalement */
-    text-align: center;
-    padding: 16px;
-  }
-
-  .intro-text {
-    width: 100%;
-  }
-}
-
-
-
-.contact-teaser{padding:36px 0}
-.contact-teaser-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
-
-/* -------------------------
-   Contact page specific (kept here for single-file)
-   ------------------------- */
-.contact-hero{padding:48px 0}
-.contact-grid{display:grid;grid-template-columns:420px 1fr;gap:28px;align-items:start}
-@media (max-width:980px){.contact-grid{grid-template-columns:1fr}}
-.contact-info{background:var(--surface);border:1px solid var(--border);padding:22px;border-radius:14px;box-shadow:var(--shadow)}
-.contact-info h2{margin:0 0 12px;font-size:1.25rem;color:var(--primary)}
-.contact-block{margin:18px 0;padding:12px;border-radius:10px;background:color-mix(in oklab,var(--surface) 92%,var(--primary) 2%);border:1px solid color-mix(in oklab,var(--border) 80%,var(--primary) 8%)}
-.contact-block h3{margin:0 0 6px;font-size:0.95rem;letter-spacing:0.04em;text-transform:uppercase;color:var(--text);font-weight:800}
-.contact-block p,.contact-block a{margin:0;color:var(--muted);font-weight:700;font-size:0.98rem}
-.contact-meta{margin-top:12px;color:var(--muted);font-size:0.95rem;line-height:1.45}
-.contact-panel{background:linear-gradient(180deg,color-mix(in oklab,var(--surface) 96%,white),var(--surface));border:1px solid var(--border);padding:22px;border-radius:14px;box-shadow:var(--shadow)}
-.contact-panel h2{margin:0 0 12px;color:var(--primary);font-size:1.25rem}
-.contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media (max-width:700px){.contact-form .form-row{grid-template-columns:1fr}}
-.form-group{margin-bottom:12px;display:flex;flex-direction:column;gap:8px}
-label{font-weight:700;color:var(--text);font-size:0.95rem}
-input[type="text"],input[type="email"],textarea,select{padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text);font-size:1rem}
-textarea{min-height:160px;resize:vertical}
-.form-note{font-size:0.92rem;color:var(--muted);margin-top:6px}
-
-/* -------------------------
-   Mobile-specific improvements
-   (Only applied under threshold; desktop unchanged)
-   ------------------------- */
-@media (max-width:900px) {
-  /* prevent any horizontal scrolling on mobile */
-  body { overflow-x: hidden; }
-
-  /* Ensure container-like sections line up exactly with other sections */
-  .intro-section,
-  .intro-bubble,
-  .testimonials,
-  .features,
-  .contact-teaser,
-  .page-hero,
-  .about-content,
-  .courses-content,
-  .prices-content { width: 100%; box-sizing: border-box; padding-left: 3%; padding-right: 3%; }
-
-  /* Make images fluid and avoid overflow */
-  img, .about-image, .hero-right img { max-width: 100%; height: auto; display: block; }
-
-  /* Stack intro bubble content and balance spacing */
-  .intro-bubble-inner { flex-direction: column; align-items: stretch; gap: 12px; padding: 14px; }
-  .intro-icon { margin: 0 auto 6px auto; flex: 0 0 auto; }
-  .intro-text { width: 100%; }
-
-  /* Features / cards: single column for readability */
-  .features-grid, .arches-grid, .grid-3 { grid-template-columns: 1fr !important; }
-  .feature-card, .arche { padding: 16px; min-height: auto; }
-
-  /* Increase tap targets for CTAs */
-  .btn-cta, .btn-outline, .btn-submit { padding: 14px 18px; min-height: 48px; font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; }
-
-  /* Forms full width inputs */
-  input[type="text"], input[type="email"], textarea, select { width: 100%; box-sizing: border-box; }
-
-  /* Contact teaser stacking */
-  .contact-teaser-inner { flex-direction: column; align-items: center; text-align: center; }
-
-  /* Testimonials: single column */
-  .testimonials .grid-3 { grid-template-columns: 1fr; gap: 12px; }
-
-  /* Slightly increase base text size and line-height for readability */
-  p { font-size: 1rem; line-height: 1.6; }
-
-  /* Reduce oversized hero title on small screens only (desktop unchanged) */
-  .hero-title, h1 { font-size: clamp(1.8rem, 6vw, 2.6rem); }
-
-  /* Avoid heavy shadows/large min-heights on mobile for performance */
-  .feature-card, .card, .contact-info, .contact-panel { box-shadow: none; }
-
-  /* Ensure no absolute positioning creates overflow on mobile */
-  [style*="position:absolute"], [style*="position: fixed"] { max-width: 100%; }
-}
-.contact-actions{display:flex;gap:12px;align-items:center;margin-top:8px}
-.btn-submit{background:var(--cta);color:#071026;padding:12px 20px;border-radius:12px;font-weight:900;border:none;cursor:pointer;box-shadow:0 14px 36px rgba(15,79,230,0.12);transition:transform .18s ease,box-shadow .18s ease}
-.btn-submit:hover{transform:translateY(-3px);box-shadow:0 22px 48px rgba(15,79,230,0.16);background:var(--cta-600)}
-.small-contacts{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-.small-contacts .chip{background:color-mix(in oklab,var(--surface) 92%,var(--primary) 2%);padding:8px 12px;border-radius:999px;font-weight:700;color:var(--primary)}
-input:focus,textarea:focus,select:focus{outline:3px solid color-mix(in oklab,var(--primary) 22%,transparent);outline-offset:2px}
-.divider{height:1px;background:var(--border);margin:18px 0;border-radius:2px}
-
-/* -------------------------
-   Footer
-   ------------------------- */
-
-.site-footer{background:linear-gradient(180deg,#e8b98b,#aec1e1);color:#fff;padding:36px 0 18px;margin-top:48px;border-top-left-radius:12px;border-top-right-radius:12px}
-.footer-top{display:flex;gap:36px;align-items:flex-start;justify-content:space-between;padding:18px 0}
-.footer-brand{max-width:420px}
-.footer-logo .logo-mark{font-weight:900;font-size:1.15rem;color:#000000}
-.join-title{color:#ff3b30;font-weight:900;margin-bottom:8px}
-.socials{display:flex;gap:12px}
-.social{width:44px;height:44px;border-radius:8px;background:rgba(255,255,255,0.06);display:grid;place-items:center;color:#fff}
-.social svg{display:block}
-.footer-nav{display:flex;gap:36px;margin-left:auto}
-.nav-column{list-style:none;padding:0;margin:0}
-.nav-column li{margin:6px 0}
-.nav-column a{color:rgba(0, 0, 0, 0.95);font-weight:700}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.06);padding:14px 0;margin-top:18px}
-.footer-bottom p{margin:0;color:rgba(0, 0, 0, 0.78);font-size:0.95rem}
-.credit-name{color:var(--accent);font-weight:800}
-@media(max-width:900px){.footer-top{flex-direction:column}.footer-nav{margin-left:0}.footer-bottom{flex-direction:column;align-items:flex-start;gap:8px}}
-
-/* -------------------------
-   Controls (theme + lang)
-   ------------------------- */
-.controls{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);display:flex;gap:12px;z-index:240}
-.control-btn{background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;border:none;padding:12px 16px;border-radius:999px;font-weight:800;box-shadow:0 12px 30px rgba(15,23,42,0.12);cursor:pointer;transition:transform var(--transition)}
-.control-btn.secondary{background:linear-gradient(135deg,color-mix(in oklab,var(--surface) 60%,var(--primary) 40%),color-mix(in oklab,var(--surface) 60%,var(--accent) 40%));color:var(--text);border:1px solid var(--border)}
-.control-btn:hover{transform:translateY(-3px)}
-
-/* -------------------------
-   Fixed CTA (optional)
-   ------------------------- */
-.fixed-cta{position:fixed;right:18px;bottom:110px;background:var(--cta);color:#071026;padding:12px 18px;border-radius:999px;font-weight:900;box-shadow:0 18px 40px rgba(31,87,216,0.12);z-index:230}
-.fixed-cta:hover{transform:translateY(-4px);background:var(--cta-600)}
-
-/* -------------------------
-   Page Hero (for inner pages)
-   ------------------------- */
-.page-hero{padding:48px 0;border-bottom:1px solid var(--border)}
-.page-hero h1{margin:0 0 12px;color:var(--text);text-align:center}
-.page-intro{color:var(--muted);font-size:1.1rem;margin:0;max-width:56ch;text-align:center}
-/* Conteneur photo générique */
-.photo-gallery {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 32px;
-}
-
-.photo-gallery .photo-block {
-  flex: 1 1 45%;   /* deux photos côte à côte */
-  max-width: 500px;
-  overflow: hidden;
-  border-radius: 12px;
-  height: 300px;   /* hauteur identique pour tous les blocs */
-}
-
-.photo-gallery .photo-block img {
-  width: 100%;
-  height: 100%;       /* force l'image à remplir le bloc */
-  object-fit: cover;  /* recadre automatiquement */
-}
-
-/* si tu veux que la deuxième photo masque le haut */
-.photo-gallery .photo-block:nth-child(2) img {
-  object-position:center 40%; /* ajuste la position verticale */
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .photo-gallery .photo-block {
-    flex: 1 1 100%;
-    height: 250px;   /* ajustement pour petit écran */
-  }
-}
-
-
-
-/* -------------------------
-   Courses Page
-   ------------------------- */
-.courses-content{padding:48px 0}
-.courses-tabs{display:flex;gap:12px;margin-bottom:32px;border-bottom:1px solid var(--border);padding-bottom:16px}
-.tab-btn{background:transparent;border:none;padding:12px 16px;font-weight:800;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;transition:all var(--transition);font-size:1rem}
-.tab-btn.active{color:var(--primary);border-bottom-color:var(--primary)}
-.tab-btn:hover{color:var(--text)}
-
-.tab-content{display:none}
-.tab-content.active{display:block;animation:floatUp 0.4s ease both}
-
-.course-section{margin-bottom:48px}
-.course-section h2{margin-bottom:18px;color:var(--text)}
-.course-section h3{color:var(--primary);margin-bottom:14px;font-size:1.3rem}
-
-.course-details{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:24px 0}
-@media(max-width:900px){.course-details{grid-template-columns:1fr}}
-.course-card{background:var(--surface);border:1px solid var(--border);padding:20px;border-radius:14px;box-shadow:0 8px 24px rgba(15,23,42,0.04);transition:transform var(--transition)}
-.course-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,23,42,0.08)}
-.course-card h4{margin:0 0 12px;color:var(--text);font-size:1.1rem}
-.course-card p{margin:0 0 8px;color:var(--muted);font-size:0.95rem;line-height:1.7}
-.course-card p:last-child{margin-bottom:0}
-
-.modalites{background:linear-gradient(180deg,color-mix(in oklab,var(--surface) 95%,var(--primary) 2%),var(--surface));border:1px solid var(--border);padding:28px;border-radius:14px}
-.modalite-item{margin-bottom:20px}
-.modalite-item:last-child{margin-bottom:0}
-.modalite-item h4{margin:0 0 8px;color:var(--primary);font-size:1.05rem}
-.modalite-item p{margin:0;color:var(--muted);line-height:1.7}
-
-.schedule{margin-top:48px}
-
-/* -------------------------
-   Location section with Google Maps
-   ------------------------- */
-.location-section{padding:32px 0}
-.location-section h2{margin-bottom:18px;color:var(--text);text-align:center;display:flex;align-items:center;justify-content:center;gap:8px}
-.location-icon{font-size:1.5rem;display:inline-block}
-.location-content{background:var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:0 12px 30px rgba(15,23,42,0.06);padding:20px;overflow:hidden}
-.location-address{text-align:center;margin-bottom:14px}
-.location-address p{margin:0;color:var(--text);font-size:0.95rem;line-height:1.6}
-.location-map{position:relative;width:100%;padding-bottom:45%;height:0;overflow:hidden;border-radius:12px}
-.location-map iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px}
-@media(max-width:900px){.location-section{padding:24px 0}.location-content{padding:14px}.location-address{margin-bottom:12px}.location-address p{font-size:0.9rem}.location-map{padding-bottom:55%}}
-
-.schedule-subtitle{color:var(--muted);font-style:italic;margin-top:8px;margin-bottom:20px}
-.schedule-table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(15,23,42,0.04)}
-.schedule-table thead{background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff}
-.schedule-table th{padding:16px;text-align:center;font-weight:800;font-size:0.95rem}
-.schedule-table td{padding:16px;text-align:center;border-right:1px solid var(--border);border-bottom:1px solid var(--border);font-size:0.95rem;color:var(--text)}
-.schedule-table td:last-child{border-right:none}
-.schedule-table tbody tr:last-child td{border-bottom:none}
-.schedule-table strong{color:var(--primary);font-weight:800}
-@media(max-width:880px){.schedule-table{font-size:0.85rem}.schedule-table th,.schedule-table td{padding:12px 8px}}
-
-/* Individual courses steps */
-.individual-steps{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:28px 0}
-@media(max-width:900px){.individual-steps{grid-template-columns:1fr}}
-.step-item{display:flex;gap:18px;align-items:flex-start}
-.step-number{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.4rem;flex-shrink:0}
-.step-content h4{margin:0 0 8px;color:var(--text);font-size:1.05rem}
-.step-content p{margin:0;color:var(--muted);line-height:1.7;font-size:0.95rem}
-
-/* Levels page */
-.levels-content{padding:48px 0}
-.levels-intro-section{background:var(--surface);border:1px solid var(--border);padding:28px;border-radius:14px;margin-bottom:48px}
-.levels-intro-section h2{margin-bottom:16px;color:var(--text);font-size:1.3rem}
-.levels-intro-section p{color:var(--muted);line-height:1.8;margin-bottom:14px}
-.levels-intro-section p:last-child{margin-bottom:0}
-.levels-intro-section a{color:var(--primary);font-weight:800;text-decoration:underline}
-.levels-intro-section a:hover{color:var(--primary-600)}
-
-.levels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
-@media(max-width:1100px){.levels-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.levels-grid{grid-template-columns:1fr}}
-
-.level-card{background:var(--surface);border:2px solid var(--border);border-radius:16px;padding:28px;transition:transform var(--transition),box-shadow var(--transition);position:relative}
-.level-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(15,23,42,0.12);border-color:var(--primary)}
-
-.level-badge{position:absolute;top:-14px;left:24px;background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;padding:8px 16px;border-radius:8px;font-weight:900;font-size:1.1rem;box-shadow:0 8px 20px rgba(15,79,230,0.2)}
-
-.level-card h3{margin:16px 0 20px;color:var(--text);font-size:1.4rem}
-
-.level-content h4{margin:0 0 14px;color:var(--primary);font-weight:800;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.05em}
-
-.profile-list{list-style:none;padding:0;margin:0}
-.profile-list li{color:var(--muted);line-height:1.8;margin-bottom:12px;padding-left:24px;position:relative;font-size:0.95rem}
-.profile-list li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900;font-size:1.1rem}
-.profile-list li:last-child{margin-bottom:0}
-
-/* Pricing page */
-.prices-content{padding:48px 0}
-.pricing-section{margin-bottom:48px}
-.pricing-section h2{margin-bottom:12px;color:var(--text)}
-.section-subtitle{color:var(--muted);font-size:1.05rem;margin-bottom:24px;font-style:italic}
-
-.pricing-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:28px}
-@media(max-width:900px){.pricing-cards{grid-template-columns:1fr}}
-.price-card{background:var(--surface);border:1px solid var(--border);padding:28px;border-radius:14px;transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);text-align:center}
-.price-card:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(15,23,42,0.12);border-color:var(--primary)}
-.price-card.highlighted{border-color:var(--primary);background:linear-gradient(135deg,color-mix(in oklab,var(--surface) 95%,var(--primary) 3%),var(--surface))}
-.price-card h3{margin:0 0 16px;color:var(--text);font-size:1.15rem}
-.price-amount{font-size:2.5rem;font-weight:900;color:var(--primary);margin:16px 0;line-height:1}
-.price-card p{color:var(--muted);font-size:0.95rem;margin:0 0 8px}
-.price-card p:last-child{margin:0}
-.savings{color:var(--accent);font-weight:800;font-size:0.95rem;margin-top:12px}
-
-.pricing-table-wrapper{overflow-x:auto;margin:28px 0}
-.pricing-table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(15,23,42,0.04)}
-.pricing-table thead{background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff}
-.pricing-table th{padding:16px;text-align:center;font-weight:800;font-size:0.95rem}
-.pricing-table td{padding:14px;text-align:center;border-right:1px solid var(--border);border-bottom:1px solid var(--border);color:var(--text);font-size:0.95rem}
-.pricing-table td:last-child{border-right:none}
-.pricing-table tbody tr:last-child td{border-bottom:none}
-.pricing-table .price{font-weight:800;color:var(--primary);font-size:1.05rem}
-@media(max-width:880px){.pricing-table{font-size:0.85rem}.pricing-table th,.pricing-table td{padding:12px 8px}}
-
-.pricing-details{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:28px}
-@media(max-width:900px){.pricing-details{grid-template-columns:1fr}}
-.detail-item{background:var(--surface);border:1px solid var(--border);padding:20px;border-radius:12px}
-.detail-item.solo-info{border-color:color-mix(in oklab,var(--border) 70%,#ff9500 30%);background:color-mix(in oklab,var(--surface) 98%,#ff9500 1%)}
-.detail-item.semi-private{border-color:color-mix(in oklab,var(--border) 70%,var(--accent) 30%);background:color-mix(in oklab,var(--surface) 98%,var(--accent) 1%)}
-.detail-item h4{margin:0 0 12px;color:var(--text);font-size:1rem}
-.details-list{list-style:none;padding:0;margin:0}
-.details-list li{color:var(--muted);line-height:1.6;margin-bottom:10px;font-size:0.95rem}
-.details-list li:last-child{margin-bottom:0}
-
-.payment-section{background:linear-gradient(180deg,color-mix(in oklab,var(--surface) 95%,var(--primary) 2%),var(--surface));border:1px solid var(--border);padding:28px;border-radius:14px}
-.payment-info{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
-@media(max-width:900px){.payment-info{grid-template-columns:1fr}}
-.payment-item h4{margin:0 0 12px;color:var(--primary);font-weight:800;font-size:0.95rem}
-.payment-item p{color:var(--muted);line-height:1.7;margin:0;font-size:0.95rem}
-
-.pricing-cta{text-align:center;padding:48px 28px;background:linear-gradient(135deg,color-mix(in oklab,var(--surface) 90%,var(--primary) 5%),color-mix(in oklab,var(--surface) 90%,var(--accent) 5%));border-radius:14px;border:1px solid var(--border)}
-.pricing-cta h3{margin:0 0 16px;color:var(--text)}
-.pricing-cta .btn-cta{display:inline-block}
-
-/* -------------------------
-   Accessibility & small tweaks
-   ------------------------- */
-:focus{outline:3px solid color-mix(in oklab,var(--primary) 28%,transparent);outline-offset:3px}
-img{max-width:100%;height:auto;display:block}
-.hidden{display:none}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.lang-selector {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition);
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
-}
-
-
-/* -------------------------
-   Small animations
-   ------------------------- */
-@keyframes floatUp{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
-.fade-in{animation:floatUp .6s ease both}
-
-/* End of file */
