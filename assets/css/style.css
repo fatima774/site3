@@ -13,6 +13,75 @@
   flex-direction: column;
   gap: 12px;
 }
+.about-content p {
+    text-align: justify; /* Justifier le texte dans la section "About" */
+}
+/* Section photos du lieu */
+/* Section photos du lieu */
+.place-section {
+  margin: 48px auto;
+  text-align: center;
+}
+
+.place-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+
+/* Grille principale */
+.place-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;                 /* photos proches */
+  max-width: 880px;          /* taille maîtrisée */
+  margin: 0 auto;
+}
+
+/* Carte photo */
+.place-photo {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.05);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.place-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;      /* tailles homogènes */
+}
+
+/* Hover desktop uniquement */
+@media (hover: hover) {
+  .place-photo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .place-section {
+    margin: 36px auto;
+  }
+
+  .place-grid {
+    gap: 8px;               /* encore plus compact */
+    max-width: 100%;
+  }
+
+  .place-title {
+    font-size: 1.15rem;
+    margin-bottom: 14px;
+  }
+}
+
 
 /* -------------------------
    Variables de thème
@@ -299,7 +368,9 @@ p{margin:0;color:var(--muted)}
   margin-bottom: 12px;
   color: var(--primary);
 }
-
+.h3{
+  text-align: center;
+}
 .arche p,
 .feature-card p {
   font-size: 0.95rem;
@@ -569,6 +640,43 @@ input:focus,textarea:focus,select:focus{outline:3px solid color-mix(in oklab,var
 .page-hero{padding:48px 0;border-bottom:1px solid var(--border)}
 .page-hero h1{margin:0 0 12px;color:var(--text);text-align:center}
 .page-intro{color:var(--muted);font-size:1.1rem;margin:0;max-width:56ch;text-align:center}
+/* Conteneur photo générique */
+.photo-gallery {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.photo-gallery .photo-block {
+  flex: 1 1 45%;   /* deux photos côte à côte */
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 300px;   /* hauteur identique pour tous les blocs */
+}
+
+.photo-gallery .photo-block img {
+  width: 100%;
+  height: 100%;       /* force l'image à remplir le bloc */
+  object-fit: cover;  /* recadre automatiquement */
+}
+
+/* si tu veux que la deuxième photo masque le haut */
+.photo-gallery .photo-block:nth-child(2) img {
+  object-position:center 40%; /* ajuste la position verticale */
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .photo-gallery .photo-block {
+    flex: 1 1 100%;
+    height: 250px;   /* ajustement pour petit écran */
+  }
+}
+
+
 
 /* -------------------------
    Courses Page
