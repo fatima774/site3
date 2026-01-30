@@ -67,14 +67,11 @@
 
 /* 📱 Mobile */
 @media (max-width: 600px) {
-  .place-section {
-    margin: 36px auto;
+  .place-grid {
+    grid-template-columns: 1fr; /* une seule colonne sur mobile */
+    gap: 12px; /* un peu plus d'espacement si nécessaire */
   }
 
-  .place-grid {
-    gap: 8px;               /* encore plus compact */
-    max-width: 100%;
-  }
 
   .place-title {
     font-size: 1.15rem;
@@ -855,3 +852,4 @@ img{max-width:100%;height:auto;display:block}
 .fade-in{animation:floatUp .6s ease both}
 
 /* End of file */
+
