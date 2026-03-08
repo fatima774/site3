@@ -6,7 +6,7 @@
   "nav_prices": "Tarifs",
   "nav_contact": "Contact",
   "hero_title": "Cours intensifs de français en immersion pour adultes",
-  "hero_subtitle": "Une ou deux semaines.<br>À Foix, dans le Sud-Ouest de la France, dans les Pyrénées, entre Toulouse et l'Andorre",
+  "hero_subtitle": "Une ou deux semaines. À Foix, dans le Sud-Ouest de la France, dans les Pyrénées, entre Toulouse et l'Andorre",
   "hero_stagiaires_overlay": "",
   "photo_mountains_alt": "Vue sur les Pyrénées depuis Foix",
   "photo_cafe_alt": "Étudiants en conversation dans un café",
@@ -363,4 +363,5 @@
   "social_facebook": "Facebook",
   "social_instagram": "Instagram", 
   "social_linkedin": "LinkedIn"
+
 }
