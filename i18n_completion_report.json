@@ -1,0 +1,122 @@
+{
+  "title": "Foix Lingua - i18n System Completion Report",
+  "date": "2026-03-03",
+  "summary": {
+    "french_keys": 302,
+    "english_keys": 302,
+    "spanish_keys": 302,
+    "keys_in_sync": true,
+    "total_html_pages": 8,
+    "total_i18n_elements": 234,
+    "html_coverage": "8/8"
+  },
+  "html_coverage": {},
+  "new_keys_added": [
+    "courses_immersion_desc",
+    "courses_immersion_title",
+    "inscription_age",
+    "inscription_cancellation",
+    "inscription_insurance",
+    "inscription_payment",
+    "inscription_title",
+    "prices_immersion_1week",
+    "prices_immersion_2weeks",
+    "prices_immersion_included",
+    "prices_immersion_not_included",
+    "prices_immersion_room",
+    "prices_immersion_title"
+  ],
+  "languages": {
+    "fr": {
+      "name": "Français",
+      "keys": 302,
+      "sample_keys": [
+        "page_title",
+        "nav_home",
+        "nav_courses",
+        "nav_levels",
+        "nav_prices"
+      ]
+    },
+    "en": {
+      "name": "English",
+      "keys": 302,
+      "sample_keys": [
+        "page_title",
+        "nav_home",
+        "nav_courses",
+        "nav_levels",
+        "nav_prices"
+      ]
+    },
+    "es": {
+      "name": "Español",
+      "keys": 302,
+      "sample_keys": [
+        "page_title",
+        "nav_home",
+        "nav_courses",
+        "nav_levels",
+        "nav_prices"
+      ]
+    }
+  },
+  "html_pages": [
+    {
+      "file": "contact.html",
+      "i18n_elements": 28,
+      "has_language_selector": true,
+      "has_app_js": true,
+      "status": "✓ COMPLETE"
+    },
+    {
+      "file": "cours.html",
+      "i18n_elements": 52,
+      "has_language_selector": true,
+      "has_app_js": true,
+      "status": "✓ COMPLETE"
+    },
+    {
+      "file": "index.html",
+      "i18n_elements": 25,
+      "has_language_selector": true,
+      "has_app_js": true,
+      "status": "✓ COMPLETE"
+    },
+    {
+      "file": "inscription.html",
+      "i18n_elements": 22,
+      "has_language_selector": true,
+      "has_app_js": true,
+      "status": "✓ COMPLETE"
+    },
+    {
+      "file": "mentions-legales.html",
+      "i18n_elements": 42,
+      "has_language_selector": true,
+      "has_app_js": true,
+      "status": "✓ COMPLETE"
+    },
+    {
+      "file": "niveaux.html",
+      "i18n_elements": 26,
+      "has_language_selector": true,
+      "has_app_js": true,
+      "status": "✓ COMPLETE"
+    },
+    {
+      "file": "qui-suis-je.html",
+      "i18n_elements": 12,
+      "has_language_selector": true,
+      "has_app_js": true,
+      "status": "✓ COMPLETE"
+    },
+    {
+      "file": "tarifs.html",
+      "i18n_elements": 27,
+      "has_language_selector": true,
+      "has_app_js": true,
+      "status": "✓ COMPLETE"
+    }
+  ]
+}

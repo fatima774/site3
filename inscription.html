@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="inscription_foix_lingua">Inscription - Foix Lingua</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" data-i18n="logo_text">Foix Lingua</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" data-i18n="menu_button">Menu</button>
+      <ul id="primary-menu" class="nav-list">
+        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="cours.html" data-i18n="nav_courses">Stages & Cours</a></li>
+        <li><a href="niveaux.html" data-i18n="nav_levels">Niveaux</a></li>
+        <li><a href="tarifs.html" data-i18n="nav_prices">Tarifs</a></li>
+        <li><a href="inscription.html" class="active" data-i18n="inscription">Inscription</a></li>
+        <li><a href="qui-suis-je.html" data-i18n="qui_suisje">Qui suis-je ?</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue" data-i18n="lang_select">
+      <option value="fr" selected data-i18n="lang_fr">Français</option>
+      <option value="en" data-i18n="lang_en">English</option>
+      <option value="es" data-i18n="lang_es">Español</option>
+    </select>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-hero">
+    <h1 data-i18n="inscription">Inscription</h1>
+    <p data-i18n="remplissez_le_formulaire_cidessous_pour_vous_">Remplissez le formulaire ci‑dessous pour vous inscrire à un stage ou demander des informations.</p>
+  <table class="schedule-table compact">
+  <thead>
+    <tr>
+      <th data-i18n="dates_header">Dates</th>
+      <th data-i18n="niveau_header">Niveau</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr><td data-i18n="date_juin_1">15-26 juin 2026</td><td data-i18n="niveau_b1b2">B1-B2</td></tr>
+    <tr><td data-i18n="date_juillet_1">13-24 juillet 2026</td><td data-i18n="niveau_b1b2">B1-B2</td></tr>
+    <tr><td data-i18n="date_aout_1">17-28 août 2026</td><td data-i18n="niveau_adefinir">À définir</td></tr>
+    <tr><td data-i18n="date_sept_1">14-25 septembre 2026</td><td data-i18n="niveau_b1b2">B1-B2</td></tr>
+    <tr><td data-i18n="date_oct_1">12-23 octobre 2026</td><td data-i18n="niveau_a1a2">A1-A2</td></tr>
+    <tr><td data-i18n="date_nov_1">16-27 novembre 2026</td><td data-i18n="niveau_adefinir">À définir</td></tr>
+    <tr><td data-i18n="date_dec_1">7-18 décembre 2026</td><td data-i18n="niveau_a1a2">A1-A2</td></tr>
+    <tr><td data-i18n="date_janv_1">11-22 janvier 2027</td><td data-i18n="niveau_adefinir">À définir</td></tr>
+    <tr><td data-i18n="date_fev_1">15-26 février 2027</td><td data-i18n="niveau_adefinir">À définir</td></tr>
+  </tbody>
+</table>
+
+  </section>
+
+  <section class="container inscription-section">
+    <form action="https://formspree.io/f/xgvbgady" method="POST">
+      <input type="hidden" name="_subject" value="Nouvelle inscription - Foix Lingua">
+      <input type="hidden" name="_redirect" value="https://www.valorme.com/fr/merci.html">
+
+      <!-- Section 1 : Informations personnelles -->
+      <fieldset class="form-fieldset">
+        <legend data-i18n="vos_informations_personnelles">Vos informations personnelles</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="etat-civil" data-i18n="etat_civil">État civil <span>*</span></label>
+            <select id="etat-civil" name="etat_civil" required>
+              <option value="" data-i18n="select_option">-- Sélectionnez --</option>
+              <option value="Mr">M.</option>
+              <option value="Mme">Mme</option>
+              <option value="Mlle">Mlle</option>
+              <option value="Autre" data-i18n="autre_option">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nom" data-i18n="nom">Nom <span>*</span></label>
+            <input id="nom" name="nom" type="text" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prenom" data-i18n="prenom">Prénom <span>*</span></label>
+            <input id="prenom" name="prenom" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="age" data-i18n="age">Âge</label>
+            <input id="age" name="age" type="number" min="0" max="120" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pays" data-i18n="pays">Pays <span>*</span></label>
+            <input id="pays" name="pays" type="text" placeholder="Ex. France, Allemagne..." required />
+          </div>
+          <div class="form-group">
+            <label for="adresse" data-i18n="adresse">Adresse</label>
+            <input id="adresse" name="adresse" type="text" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email" data-i18n="email">Email <span aria-label="obligatoire">*</span></label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="telephone" data-i18n="telephone">Téléphone <span aria-label="obligatoire">*</span></label>
+            <input id="telephone" name="telephone" type="tel" required />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Section 2 : Langues -->
+      <fieldset class="form-fieldset">
+        <legend data-i18n="vos_connaissances_linguistiques">Vos connaissances linguistiques</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="langue-maternelle" data-i18n="langue_maternelle">Langue maternelle <span aria-label="obligatoire">*</span></label>
+            <input id="langue-maternelle" name="langue_maternelle" type="text" placeholder="Ex. Anglais, Allemand..." required />
+          </div>
+          <div class="form-group">
+            <label for="autres-langues" data-i18n="autres_langues_parles">Autres langues parlées</label>
+            <input id="autres-langues" name="autres_langues" type="text" placeholder="Ex. Anglais, Espagnol..." />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Section 3 : Niveau de français -->
+      <fieldset class="form-fieldset">
+        <legend data-i18n="votre_niveau_de_francais">Votre niveau de français</legend>
+        <div class="form-group">
+          <label data-i18n="niveau_estime">Niveau estimé <span aria-label="obligatoire">*</span></label>
+          <div class="checkbox-group">
+            <label class="radio-label"><input type="radio" name="niveau" value="A1" required /> A1 (débutant)</label>
+            <label class="radio-label"><input type="radio" name="niveau" value="A2" required /> A2 (élémentaire)</label>
+            <label class="radio-label"><input type="radio" name="niveau" value="B1" required /> B1 (intermédiaire)</label>
+            <label class="radio-label"><input type="radio" name="niveau" value="B2-C1" required /> B2-C1 (avancé)</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="historique-etudes" data-i18n="historique_des_etudes">Historique des études de français <span aria-label="obligatoire">*</span></label>
+          <textarea id="historique-etudes" name="historique_etudes" placeholder="Décrivez votre parcours en français..." required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="plus-facile" data-i18n="plus_facile">Le plus facile pour vous <span aria-label="obligatoire">*</span></label>
+            <input id="plus-facile" name="plus_facile" type="text" placeholder="Ex. conversation, grammaire..." required />
+          </div>
+          <div class="form-group">
+            <label for="plus-difficile" data-i18n="plus_difficile">Le plus difficile pour vous <span>*</span></label>
+            <input id="plus-difficile" name="plus_difficile" type="text" placeholder="Ex. prononciation, conjugaisons..." required />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Section 4 : Intérêts -->
+      <fieldset class="form-fieldset">
+        <legend data-i18n="vos_interets">Vos intérêts</legend>
+        <div class="form-group">
+          <label for="interets" data-i18n="intrts_particuliers">Intérêts particuliers</label>
+          <textarea id="interets" name="interets" placeholder="Ex. culture française, littérature, gastronomie..."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Section 5 : Stage -->
+      <fieldset class="form-fieldset">
+        <legend data-i18n="votre_inscription_au_stage">Votre inscription au stage</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="duree-stage" data-i18n="duree_du_stage">Durée du stage <span aria-label="obligatoire">*</span></label>
+            <select id="duree-stage" name="duree_stage" required>
+              <option value="" data-i18n="select_option">-- Sélectionnez --</option>
+              <option value="1 semaine" data-i18n="une_semaine">1 semaine</option>
+              <option value="2 semaines" data-i18n="deux_semaines">2 semaines</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date-stage" data-i18n="date_du_stage">Date du stage <span aria-label="obligatoire">*</span></label>
+            <select id="date-stage" name="date_stage" required>
+            <option value="" data-i18n="select_option">-- Sélectionnez --</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dates-alternatives" data-i18n="dates_alternatives">Dates alternatives</label>
+          <input id="dates-alternatives" name="dates_alternatives" type="text" placeholder="Ex. 15-26 juin ou 13-24 juillet" />
+        </div>
+
+        <div class="form-group">
+          <label for="remarques" data-i18n="remarques_diverses">Remarques diverses</label>
+          <textarea id="remarques" name="remarques" placeholder="Des questions ou remarques avant de nous contacter ?"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Section 6 : Messages de confirmation -->
+      <div id="successMessage" class="success-message" style="display: none;">
+        <p data-i18n="votre_inscription_a_t_envoye_avec_succs_nous_">✓ Votre inscription a été envoyée avec succès ! Nous vous répondrons dans les 48 heures.</p>
+      </div>
+
+      <div id="errorMessage" class="error-message" style="display: none;">
+        <p data-i18n="une_erreur_sest_produite_veuillez_ressayer">✗ Une erreur s'est produite. Veuillez réessayer.</p>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-cta" data-i18n="envoyer_mon_inscription">Envoyer mon inscription</button>
+        <button type="reset" class="btn-reset" data-i18n="rinitialiser">Réinitialiser</button>
+      </div>
+    </form>
+   
+    <h3 class="form-note" data-i18n="note_inscription">Conditions d'inscription pour les cours de français :</h3>
+    <p data-i18n="test">Âge :	Les participants doivent être âgés de 18 ans.</p>
+    <p data-i18n="test2">Inscription :	30 % des frais de stage doivent être versés au moment de l'inscription, le solde devra être réglé au plus tard le premier jour de cours. Les frais bancaires sont intégralement à la charge des stagiaires.</p>
+    <p data-i18n="test3">Annulation :	A plus de 3 mois avant le début du stage, l'acompte versé est remboursé mais une somme forfaitaire de 70 € est retenue. En cas d'annulation entre 3 mois et 30 jours avant le début du cours, ½ de l’acompte est remboursé. En cas d'annulation à moins de 30 jours, l'acompte n'est pas remboursé.</p>
+    <p data-i18n="test4">Assurance :	une assurance avec contrat d'assistance "voyage" est conseillée.</p>
+  
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top container">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo"><strong class="logo-mark" data-i18n="logo_text_footer">Foix Lingua</strong></a>
+      <div class="join-us">
+        <span class="join-title" data-i18n="join_title">REJOIGNEZ‑NOUS</span>
+        <div class="socials" role="group" aria-label="Réseaux sociaux">
+          <a href="https://www.facebook.com" target="_blank" class="social" aria-label="Facebook" title="Facebook">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3V22c4.78-.8 8.44-4.94 8.44-9.93z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="social" aria-label="Instagram" title="Instagram">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A3.8 3.8 0 1 0 15.8 12 3.8 3.8 0 0 0 12 8.2zm6.4-3.6a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="social" aria-label="LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.4-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24H17v-7.2c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8V24H8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigation du pied de page">
+      <ul class="nav-column">
+        <li><a href="index.html" data-i18n="nav_home_footer">ACCUEIL</a></li>
+        <li><a href="cours.html" data-i18n="nav_courses_footer">STAGES & COURS</a></li>
+        <li><a href="niveaux.html" data-i18n="nav_levels_footer">NIVEAUX</a></li>
+        <li><a href="qui-suis-je.html" data-i18n="quisuisje_footer">Qui-suis-je ?</a></li>
+      </ul>
+
+      <ul class="nav-column">
+        <li><a href="tarifs.html" data-i18n="nav_prices_footer">TARIFS</a></li>
+        <li><a href="inscription.html" class="active" data-i18n="inscription_footer">INSCRIPTION</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact_footer">CONTACT</a></li>
+        <li><a href="mentions-legales.html" data-i18n="mentions_lgales_footer">MENTIONS LÉGALES</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-bottom container">
+    <p data-i18n="footer_copyright">Copyright © 2025 Foix Lingua. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/lang-switcher.js"></script>
+
+<script>
+  const dureeSelect = document.getElementById("duree-stage");
+  const dateSelect = document.getElementById("date-stage");
+
+  const dates1semaine = [
+    "15 juin",
+    "22 juin",
+    "13 juillet",
+    "20 juillet",
+    "17 août",
+    "24 août",
+    "14 septembre",
+    "21 septembre",
+    "12 octobre",
+    "19 octobre",
+    "16 novembre",
+    "23 novembre",
+    "7 décembre",
+    "14 décembre",
+    "11 janvier",
+    "18 janvier",
+    "15 février",
+    "22 février"
+  ];
+
+  const dates2semaines = [
+    "15-26 juin 2026 — B1–B2",
+    "13-24 juillet 2026 — B1–B2",
+    "17-28 août 2026 — A définir",
+    "14-25 septembre 2026 — B1–B2",
+    "12-23 octobre 2026 — A1–A2",
+    "16-27 novembre 2026 — A définir",
+    "7-18 décembre 2026 — A1–A2",
+    "11-22 janvier 2027 — A définir",
+    "15-26 février 2027 — A définir"
+  ];
+
+  dureeSelect.addEventListener("change", () => {
+    dateSelect.innerHTML = '<option value="">-- Sélectionnez --</option>';
+
+    if (dureeSelect.value === "1 semaine") {
+      dates1semaine.forEach(date => {
+        const opt = document.createElement("option");
+        opt.value = date;
+        opt.textContent = date;
+        dateSelect.appendChild(opt);
+      });
+    }
+
+    if (dureeSelect.value === "2 semaines") {
+      dates2semaines.forEach(date => {
+        const opt = document.createElement("option");
+        opt.value = date;
+        opt.textContent = date;
+        dateSelect.appendChild(opt);
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

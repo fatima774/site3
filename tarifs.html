@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="tarifs_foix_lingua">Tarifs - Foix Lingua</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" data-i18n="logo_text">Foix Lingua</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" data-i18n="menu_button">Menu</button>
+      <ul id="primary-menu" class="nav-list">
+        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="cours.html" data-i18n="nav_courses">Stages & Cours</a></li>
+        <li><a href="niveaux.html" data-i18n="nav_levels">Niveaux</a></li>
+        <li><a href="tarifs.html" class="active" data-i18n="nav_prices">Tarifs</a></li>
+        <li><a href="inscription.html" data-i18n="inscription">Inscription</a></li>
+        <li><a href="qui-suis-je.html" data-i18n="qui_suisje">Qui suis-je ?</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <select id="lang-select" class="lang-selector" aria-label="Sélectionner une langue" data-i18n="lang_select">
+      <option value="fr" selected data-i18n="lang_fr">Français</option>
+      <option value="en" data-i18n="lang_en">English</option>
+      <option value="es" data-i18n="lang_es">Español</option>
+    </select>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero container">
+    <h1 data-i18n="nav_prices">Tarifs</h1>
+    <p data-i18n="dcouvrez_nos_offres_pour_stages_intensifs_cou">Découvrez nos offres pour stages intensifs, cours individuels, et immersion chez le professeur.</p>
+  </section>
+
+  <div class="container prices-content">
+    <div class="courses-tabs">
+      <button class="tab-btn active" data-tab="stage" data-i18n="stage_intensif">Stage intensif</button>
+      <button class="tab-btn" data-tab="individuel" data-i18n="cours_individuels">Cours individuels</button>
+      <button class="tab-btn" data-tab="immersion" data-i18n="immersion_chez_le_professeur">Immersion chez le professeur</button>
+    </div>
+
+    <!-- Stage intensif -->
+    <div id="tab-stage" class="tab-content active">
+      <h2 data-i18n="prices_stage_title">Stages intensifs</h2>
+      <p data-i18n="immersion_complete_small_group">Immersion complète en petit groupe.</p>
+
+<table class="pricing-table">
+<thead>
+<tr>
+    <th data-i18n="duration_header">Durée</th>
+    <th data-i18n="price_1_person">1 personne</th>
+    <th data-i18n="price_2_persons">2 personnes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td><strong data-i18n="one_week">1 semaine</strong></td>
+    <td data-i18n="price_1p_week">650 €</td>
+    <td data-i18n="price_2p_week">600 €</td>
+</tr>
+
+<tr>
+    <td><strong data-i18n="two_weeks">2 semaines</strong></td>
+    <td data-i18n="price_1p_2weeks">1200 €</td>
+    <td data-i18n="price_2p_2weeks">1100 €</td>
+</tr>
+</tbody>
+</table>
+
+
+      <div class="pricing-details">
+        <h3 data-i18n="ce_qui_est_inclus">Ce qui est inclus :</h3>
+        <ul>
+          <li data-i18n="15h_cours_collectifs">15 heures de cours collectifs</li>
+          <li data-i18n="15h_activites">15 heures d'activités, déjeuners, sorties</li>
+          <li data-i18n="petit_groupe">Petit groupe (max 6 étudiants)</li>
+        </ul>
+
+        <h3 data-i18n="what_not_included">Ce qui n'est pas inclus :</h3>
+        <ul>
+          <li data-i18n="dejeuners_non_inclus">Déjeuners (20 à 25 €)</li>
+          <li data-i18n="entrees_sites_payants">Entrées payantes dans certains sites</li>
+        </ul>
+
+        <h3 data-i18n="si_vous_tes_seul_participant">⚠️ Si vous êtes seul participant</h3>
+        <p data-i18n="programme_reduit">Le stage et le prix sont maintenus, mais le programme sera légèrement allégé : 25 heures au lieu de 30.</p>
+        <h3 data-i18n="pago_title">PAIEMENT</h3>
+        <p data-i18n="pago_deposito">Nous ne prenons pas les cartes bancaires. Le paiement de l'acompte doit être fait en euros, par transfert bancaire, Paypal ou chèque.(Les éventuels frais bancaires, localement ou en France, sont à votre charge.) Le paiement du solde doit être fait par les mêmes moyens ou en espèces au plus tard au cours des trois premiers jours de stage.</p>
+    
+      </div>
+    </div>
+
+    <!-- Cours individuels -->
+    <div id="tab-individuel" class="tab-content">
+      <h2 data-i18n="prices_indiv_title">Cours individuels</h2>
+      <p data-i18n="flexibility_and_personalization">Flexibilité et personnalisation pour répondre à vos besoins.</p>
+
+      <div class="pricing-cards">
+        <div class="price-card">
+          <h3 data-i18n="le_premier_cours_individuel_est_gratuit">Le premier cours individuel est gratuit.</h3>
+        </div>
+
+        <div class="price-card highlighted">
+          <h3 data-i18n="prices_indiv_10h_label">Forfait 10 heures</h3>
+          <div class="price-amount">350 €</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Immersion chez le professeur -->
+    <div id="tab-immersion" class="tab-content">
+      <h2 data-i18n="immersion_chez_le_professeur">Immersion chez le professeur</h2>
+      <p data-i18n="tarifs_immersion">Tarifs : 1200 € / 1 semaine - 2300 € / 2 semaines</p>
+      <p data-i18n="ce_tarif_comprend_15_heures_de_cours_particul">Ce tarif comprend : 15 heures de cours particuliers par semaine, des activités, des sorties à la carte, hébergement et pension complète.</p>
+      <p data-i18n="la_chambre_ltage_de_ma_maison_foix_est_quipe_">La chambre, à l'étage de ma maison à Foix, est équipée d'une salle de bain et WC privatifs. Vous pourrez aussi profiter de mon jardin.</p>
+      <p data-i18n="ce_tarif_ne_comprend_pas_les_entres_payantes_">Ce tarif ne comprend pas les entrées payantes de certains sites et les éventuels repas au restaurant.</p>
+    </div>
+  </div>
+ 
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top container">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo"><strong class="logo-mark" data-i18n="logo_text_footer">Foix Lingua</strong></a>
+      <div class="join-us">
+        <span class="join-title" data-i18n="join_title">REJOIGNEZ‑NOUS</span>
+        <div class="socials" role="group" aria-label="Réseaux sociaux">
+          <a href="https://www.facebook.com" target="_blank" class="social" aria-label="Facebook" title="Facebook">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3V22c4.78-.8 8.44-4.94 8.44-9.93z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="social" aria-label="Instagram" title="Instagram">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A3.8 3.8 0 1 0 15.8 12 3.8 3.8 0 0 0 12 8.2zm6.4-3.6a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="social" aria-label="LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.4-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24H17v-7.2c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8V24H8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigation du pied de page">
+      <ul class="nav-column">
+        <li><a href="index.html" data-i18n="nav_home_footer">ACCUEIL</a></li>
+        <li><a href="cours.html" data-i18n="nav_courses_footer">STAGES & COURS</a></li>
+        <li><a href="niveaux.html" data-i18n="nav_levels_footer">NIVEAUX</a></li>
+        <li><a href="qui-suis-je.html" data-i18n="quisuisje_footer">Qui-suis-je ?</a></li>
+      </ul>
+      <ul class="nav-column">
+        <li><a href="tarifs.html" class="active" data-i18n="nav_prices_footer">TARIFS</a></li>
+        <li><a href="inscription.html" data-i18n="inscription_footer">INSCRIPTION</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact_footer">CONTACT</a></li>
+        <li><a href="mentions-legales.html" data-i18n="mentions_lgales_footer">MENTIONS LÉGALES</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-bottom container">
+    <p data-i18n="footer_copyright">Copyright © 2025 Foix Lingua. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/lang-switcher.js"></script>
+<script>
+  (function(){
+    try {
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      if(tabBtns.length){
+        tabBtns.forEach(btn => {
+          if(btn.dataset.hasFallback) return;
+          btn.addEventListener('click', function(){
+            const tabName = this.getAttribute('data-tab');
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            tabBtns.forEach(b => b.classList.remove('active'));
+            const tabEl = document.getElementById('tab-' + tabName);
+            if(tabEl) tabEl.classList.add('active');
+            this.classList.add('active');
+          }, {passive:true});
+          btn.dataset.hasFallback = '1';
+        });
+      }
+    }catch(e){ console.warn(e) }
+  })();
+</script>
+
+</body>
+</html>

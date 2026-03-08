@@ -1,0 +1,394 @@
+{
+  "page_title": "Foix Lingua — Sitio oficial",
+  "site_name": "Foix Lingua",
+  "logo_text": "Foix Lingua",
+  "logo_text_footer": "Foix Lingua",
+  "menu_button": "Menú",
+  "lang_select": "Seleccionar idioma",
+  "lang_fr": "Français",
+  "lang_en": "English",
+  "lang_es": "Español",
+  "join_title": "ÚNETE A NOSOTROS",
+  "footer_copyright": "Copyright © 2025 Foix Lingua. Todos los derechos reservados.",
+  "social_facebook": "Facebook",
+  "social_instagram": "Instagram",
+  "social_linkedin": "LinkedIn",
+
+  "nav_home": "Inicio",
+  "nav_courses": "Cursos & Programas",
+  "nav_levels": "Niveles",
+  "nav_prices": "Precios",
+  "inscription": "Inscripción",
+  "qui_suisje": "Quién soy",
+  "nav_contact": "Contacto",
+
+  "nav_home_footer": "INICIO",
+  "nav_courses_footer": "CURSOS & PROGRAMAS",
+  "nav_levels_footer": "NIVELES",
+  "nav_prices_footer": "PRECIOS",
+  "inscription_footer": "INSCRIPCIÓN",
+  "nav_contact_footer": "CONTACTO",
+  "quisuisje_footer": "Quién soy",
+  "mentions_lgales_footer": "AVISO LEGAL",
+
+  "hero_title": "Cursos Intensivos de Francés Para Adultos",
+  "hero_subtitle": "1 o 2 semanas de inmersión total\nen Foix, en los Pirineos, entre Toulouse y Andorra.",
+  "intro_title": "Aprende francés rodeado de amistad y buena energía.",
+
+  "une_vieille_ville_pittoresque": "Sumérgete en plena Edad Media y explora las estrechas calles de esta pequeña ciudad medieval",
+  "feature_city": "Castillo, artesanía local, cafés, restaurantes, tiendas... ¡y la estación de tren a pocos minutos del aula! No necesitas coche.",
+  "pour_vous": "Para ti…",
+  "feature_for_you": "Mañanas: clases, almuerzos en el centro de la ciudad; tardes: excursiones, visitas o juegos de mesa.",
+  "un_accueil_lcoute": "Un acogimiento atento",
+  "feature_welcome": "Atención total de la profesora a tus necesidades y deseos. Puedes aprender a tu propio ritmo en un ambiente tranquilo y alegre.",
+
+  "photo_students_alt": "Estudiantes en grupo",
+  "photo_castle_alt": "Castillo de Foix",
+
+  "testimonials_title": "Testimonios",
+  "testimonial_1": "«Céline es una excelente profesora. Desea de verdad ayudarte a aprender a hablar francés y utiliza la conversación para trabajar el vocabulario, la construcción de frases y la gramática, adaptados a tu nivel de francés. Su paciencia es increíble.»-- Kristin de Nueva  Zélanda",
+  "testimonial_2": "«Céline es una excelente profesora. Te permite orientar la dirección de la clase proponiendo temas que te interesan y luego construye la lección alrededor de esos temas. También te anima a asistir a eventos en Foix que pueden ayudarte a mejorar tu francés. Recomiendo calurosamente sus clases para mejorar tu francés, de forma eficaz y divertida.»--Julian de Nueva  Zélanda.",
+ 
+
+  "contact_title": "Contacto",
+  "contact_intro": "Para cualquier pregunta o reserva, escríbenos.",
+  "contact_button": "Contáctanos",
+
+  "location_title": "¿Dónde encontrarnos?",
+  "location_address": "Place du 8 Mai 1945, 09000 Foix — France",
+
+  "stages_et_cours_intensifs": "Cursos y programas intensivos",
+  "courses_intro": "30 h por semana: clases, almuerzos, salidas y talleres culturales.",
+  "cours_intensifs": "Cursos intensivos",
+ 
+  "courses_collective_title": "Cursos intensivos o clases colectivas de francés",
+  "courses_collective_subtitle": "Una formación basada en el bienestar",
+  "formation_french_immersion": "La formación está diseñada para ofrecer un \"baño de francés\", 30 horas por semana.",
+
+  "cours_ludiques_et_pratiques": "📚 Cursos divertidos y prácticos",
+  "fun_practical_classes": "Un enfoque comunicativo: clases dinámicas para hablar desde el primer día usando materiales auténticos, complementadas con explicaciones claras de gramática. Individualización y atención a personas con DYS o neurodiversidad.",
+  "djeuners_conviviaux": "🍽️ Almuerzos en restaurantes locales",
+  "convivial_lunches": "Almuerzos pensados para fomentar la conversación informal, compartidos con la profesora en el casco antiguo de Foix y adaptados a restricciones dietéticas. A veces se unen amigos para escuchar distintos acentos.",
+  "sorties_en_ville": "🚶 Excursiones y paseos",
+  "real_situation_outings": "Salidas diseñadas para hablar en situaciones reales mientras se descubre la ciudad y sus alrededores.",
+  "activits_culturelles": "🎭 Actividades culturales",
+  "activits_autour_de_la_culture_locale_cours_de": "Actividades centradas en la cultura local: visitas a granjas y talleres, clases de cocina, degustaciones de productos locales, conciertos tipo \"aperitivo\", y por qué no ?, cine.",
+
+  "photo_stage_1_alt": "Foto curso 1",
+  "photo_stage_2_alt": "Foto estudiantes",
+  "photo_stage_3_alt": "Foto curso 2",
+
+  "courses_modalites_title": "Modalidades",
+  "calendar_label": "Calendario",
+
+  "calendar_table_html": "<table class=\"schedule-table compact\"><thead><tr><th>FECHAS</th><th>NIVEL</th></tr></thead><tbody><tr><td>15-26 junio 2026</td><td>B1–B2</td></tr><tr><td>13-24 julio 2026</td><td>B1–B2</td></tr><tr><td>17-28 agosto 2026</td><td>Por definir</td></tr><tr><td>14-25 septiembre 2026</td><td>B1–B2</td></tr><tr><td>12-23 octubre 2026</td><td>A1–A2</td></tr><tr><td>16-27 noviembre 2026</td><td>Por definir</td></tr><tr><td>7-18 diciembre 2026</td><td>A1–A2</td></tr><tr><td>11-22 enero 2027</td><td>Por definir</td></tr><tr><td>15-26 febrero 2027</td><td>Por definir</td></tr></tbody></table>",
+
+  "groupes_rduits": "👥 Grupos reducidos",
+  "groupes_de_maximum_six_tudiants_de_niveau_sim": "Grupos de hasta seis estudiantes con niveles similares. Contáctanos si quieres venir con un grupo o con niveles mixtos.",
+  "cas_particulier": "⚠️ Nota",
+  "si_un_seul_tudiant_est_prsent_une_semaine_le_": "Si sólo hay un estudiante inscrito durante una semana, el curso se mantiene al mismo precio, con 25 h de clase en lugar de 30 h.",
+
+  "courses_week_title": "Semana tipica",
+ 
+  "courses_week_table_html": "<table class=\"schedule-table\" aria-describedby=\"Semana tipo\"><thead><tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr></thead><tbody><tr><td><strong class=\"time-slot\">9h–11h</strong><br>Clases<br><strong class=\"time-slot\">11h–12h</strong><br>Programación salida</td><td><strong class=\"time-slot\">9h–12h</strong><br>Clases</td><td><strong class=\"time-slot\">9h–12h</strong><br>Clases</td><td><strong class=\"time-slot\">9h–12h</strong><br>Clases</td><td><strong class=\"time-slot\">8h–10h</strong><br>Mercado<br><strong class=\"time-slot\">10h–12h</strong><br>Clases</td></tr><tr><td>Almuerzo<br>Juntos</td><td>Almuerzo<br>Juntos</td><td>Almuerzo<br>Libre</td><td>Almuerzo<br>Juntos</td><td>Almuerzo<br>Juntos</td></tr><tr><td><strong class=\"time-slot\">14h–16h</strong><br>Visita / Actividades</td><td><strong class=\"time-slot\">14h–17h</strong><br>Visita / Actividades</td><td><strong class=\"time-slot\">Tarde</strong><br>Libre</td><td><strong class=\"time-slot\">14h–17h</strong><br>Visita / Actividades</td><td><strong class=\"time-slot\">14h–17h</strong><br>Clases individuales según organización del grupo</td></tr></tbody></table>",
+
+ 
+  "courses_individual_title": "Curso individual de francés o español",
+  "courses_individual_subtitle": "Pensado según tus expectativas",
+  "courses_individual_intro": "Cada clase sigue una estructura pedagógica adaptada a tus necesidades específicas.",
+  "courses_individual_step_a_title": "Material inicial",
+  "courses_individual_step_a": "Un documento escrito o sonoro para introducir el vocabulario y el punto gramatical objetivo.",
+  "courses_individual_step_b_title": "Juegos de rol",
+  "courses_individual_step_b": "Ejercicios de simulación para la adquisición léxica y gramatical.",
+  "courses_individual_step_c_title": "Registro escrito",
+  "courses_individual_step_c": "Un resumen escrito para consolidar lo aprendido.",
+  "courses_individual_step_d_title": "Ejercicios prácticos",
+  "courses_individual_step_d": "Ejercicios para la siguiente clase para consolidar lo aprendido de forma autónoma.",
+  "horaire_et_frquence": "⏰ Horario y frecuencia",
+  "courses_individual_modalites_schedule": "Horario y frecuencia a definir conjuntamente según tu disponibilidad y objetivos.",
+"hero_stagiaires_overlay": "",
+"photo_mountains_alt": "",
+"photo_cafe_alt": "",
+"location_map": ""
+,
+  "15_heures_de_cours_particuliers_par_semaine_d": "Un programa todo incluido con   clases individuales (15 horas), actividades y excursiones. Aprenderás conviviendo con tu profesora. Ven a conocer a mis vecinos y amigos, a descubrir los vinos y los viñedos de la zona, a caminar conmigo! Visitaremos juntos los baños termales y  Foix.",
+  "la_chambre_ltage_de_ma_maison_foix_est_quipe_": "!En verano,  ven a cultivar la huerta conmigo y a cocinar la verdura de la temporada ! En invierno, disfrutarás del ambiente blanco de las estaciones de esquí! La habitación, situada en la planta superior de mi casa en Foix, cuenta con baño y aseo privados. También podrás disfrutar de mi jardín.",
+  "un_cadre_chaleureux_pour_apprendre": "Un entorno acogedor para aprender",
+  "lieu_1_alt": "Sala de clases luminosa en Foix",
+  "lieu_2_alt": "Espacio de aprendizaje tranquilo y acogedor",
+  "lieu_3_alt": "Lugar de las clases de francés en Foix",
+  "lieu_4_alt": "Entorno agradable para las clases de francés",
+
+  "tarifs_foix_lingua": "Precios - Foix Lingua",
+  "dcouvrez_nos_offres_pour_stages_intensifs_cou": "Descubre nuestras ofertas para cursos intensivos, clases individuales e inmersión en casa de la profesora.",
+
+  "stage_intensif": "Curso intensivo",
+  "prices_stage_title": "Cursos intensivos",
+  "immersion_complete_small_group": "Inmersión completa en pequeño grupo.",
+
+  "price_1_person": "1 persona",
+  "price_2_persons": "Precio por persona si 2 personas",
+
+  "price_1p_week": "650 €",
+  "price_2p_week": "600 €",
+
+  "price_1p_2weeks": "1200 €",
+  "price_2p_2weeks": "1100 €",
+
+
+  "duration_header": "Duración",
+  "price_per_person_header": "Precio por persona",
+  "one_week": "1 semana",
+  "two_weeks": "2 semanas",
+
+  "libre_text": "Libre"
+,
+
+  "ce_qui_est_inclus": "Incluye:",
+  "15h_cours_collectifs": "15 horas de clases colectivas",
+  "15h_activites": "15 horas de actividades, almuerzos y salidas",
+  "petit_groupe": "Grupo reducido (máx. 6 estudiantes)",
+
+  "what_not_included": "No incluido:",
+  "dejeuners_non_inclus": "Almuerzos (20 - 25 €)",
+  "entrees_sites_payants": "Entradas a ciertos lugares",
+  "si_vous_tes_seul_participant": "⚠️ Si eres el único participante",
+  "programme_reduit": "Si eres el único participante en un curso grupal, el curso y el precio se mantienen, pero el programa se reducirá ligeramente: 25 horas en total.",
+
+  "immersion_chez_le_professeur": "Inmersión en casa de la profesora",
+
+  "tarifs_immersion": "1200 € / 1 semana - 2300 € / 2 semanas",
+
+  "ce_tarif_comprend_15_heures_de_cours_particul": "Incluido para una semana: alojamiento, comidas, 15 horas de clase individual, actividades, paseo.",
+
+  "ce_tarif_ne_comprend_pas_les_entres_payantes_": "No incluido: entradas en cine, museos, cuevas y comidas en el restaurante."
+,
+
+  "prices_indiv_title": "Cursos individuales",
+  "flexibility_and_personalization": "Flexibilidad y personalización según tus necesidades.",
+  "le_premier_cours_individuel_est_gratuit": "La primera clase individual es gratuita.",
+  "prices_indiv_10h_label": "Paquete 10 horas",
+
+  "inscription_foix_lingua": "Inscripción - Foix Lingua",
+  "nav_inscription": "Inscripción",
+  "remplissez_le_formulaire_cidessous_pour_vous_": "Rellena el formulario abajo para inscribirte o pedir información.",
+
+  "vos_informations_personnelles": "Tus datos personales",
+  "etat_civil": "Tratamiento / Estado civil*",
+  "select_option": "-- Selecciona --",
+  "autre_option": "Otro",
+  "nom": "Apellido*",
+  "prenom": "Nombre",
+  "age": "Edad",
+  "pays": "País",
+  "adresse": "Dirección",
+  "email": "Correo electrónico",
+  "telephone": "Teléfono",
+
+  "vos_connaissances_linguistiques": "Tus conocimientos lingüísticos",
+  "langue_maternelle": "Lengua materna",
+  "autres_langues_parles": "Otras lenguas habladas",
+
+  "votre_niveau_de_francais": "Tu nivel de francés",
+  "niveau_estime": "Nivel estimado",
+  "historique_des_etudes": "Historial de estudios de francés",
+  "plus_facile": "Lo que te resulta más fácil",
+  "plus_difficile": "Lo que te resulta más difícil",
+
+  "vos_interets": "Tus intereses",
+  "intrts_particuliers": "Intereses particulares",
+
+  "votre_inscription_au_stage": "Tu inscripción al curso",
+  "duree_du_stage": "Duración del curso",
+  "une_semaine": "1 semana",
+  "deux_semaines": "2 semanas",
+  "date_du_stage": "Fecha del curso",
+  "dates_alternatives": "Fechas alternativas",
+  "remarques_diverses": "Observaciones",
+
+
+  "lundi": "Lunes",
+  "mardi": "Martes",
+  "mercredi": "Miércoles",
+  "jeudi": "Jueves",
+  "vendredi": "Viernes",
+
+  "dates_header": "FECHAS",
+  "niveau_header": "NIVEL",
+
+  "date_juin_1": "15–26 junio 2026",
+  "date_juillet_1": "13–24 julio 2026",
+  "date_aout_1": "17–28 agosto 2026",
+  "date_sept_1": "14–25 septiembre 2026",
+  "date_oct_1": "12–23 octubre 2026",
+  "date_nov_1": "16–27 noviembre 2026",
+  "date_dec_1": "7–18 diciembre 2026",
+  "date_janv_1": "11–22 enero 2027",
+  "date_fev_1": "15–26 febrero 2027",
+
+  "niveau_b1b2": "B1–B2",
+  "niveau_a1a2": "A1–A2",
+  "niveau_adefinir": "Por definir"
+,
+
+  "apres_midi": "Tarde",
+  "courses_week_subtitle": "De lunes 09:00 a viernes 17:00"
+,
+
+  "cours_text": "Clase",
+  "programmation_sortie_text": "Planificación de salida",
+  "marche_text": "Mercado",
+  "dejeuner_ensemble": "Almuerzo juntos",
+  "dejeuner_libre": "Almuerzo libre",
+  "visite_activites": "Visita / Actividades",
+"cours_individuels": "Cursos individuales",
+  "cours_individuels_suivant": "Clases individuales según la organización del grupo"
+,
+
+  "votre_inscription_a_t_envoye_avec_succs_nous_": "✓ ¡Tu inscripción se ha enviado con éxito! Te responderemos en 48 horas.",
+  "une_erreur_sest_produite_veuillez_ressayer": "✗ Ha ocurrido un error. Por favor, inténtalo de nuevo.",
+  "envoyer_mon_inscription": "Enviar mi inscripción",
+  "rinitialiser": "Reiniciar",
+
+  "qui_suisje_foix_lingua": "¿Quién soy? — Foix Lingua",
+  "intro_qui_suisje": "Bienvenido a la página de presentación de Foix Lingua. Descubre mi trayectoria y mi pasión por las lenguas.",
+
+  "presentation_1": "Tras estudiar Filología Española en las universidades de Burdeos III, Madrid y Sevilla, aprobar el CAPES (la oposición para enseñar en secundaria) y dedicar varios años a la enseñanza del español cerca de Lille y París, decidí establecerme definitivamente en los Pirineos centrales de Ariège en 2004.\n\nEsta estabilidad geográfica se combinó con la movilidad profesional, que me llevó a ocupar puestos de dirección en un liceo local.\n\nEl hilo conductor de mi carrera: la curiosidad intelectual, el gusto por conocer gente y la comunicación. Siempre me ha movido un fuerte interés por los idiomas y las culturas ajenas. Me encanta viajar, ir al cine, ir a conciertos y festivales. Soy también muy activa en asociaciones locales.\n\n¿Cómo nació el proyecto FOIX LINGUA? Mientras trabajaba como voluntaria enseñando francés como lengua extranjera en un centro comunitario, comencé a recibir varias solicitudes para dar clases particulares a extranjeros ubicados en Ariège. Luego vino el encuentro con Corine de la pequeña escuela Valorme, dispuesta a pasar el relevo. Fue entonces cuando empecé a estudiar la metodología de la enseñanza del francés: un MOOC de la Universidad de Lieja, explorando sitios especializados y finalmente preparando secuencias de enseñanza.\n\nHoy, propongo poner mi entusiasmo y mis competencias al servicio de tu deseo de aprender francés y de descubrir esta maravillosa y acogedora región: l'Ariège."
+,
+
+
+  "contacteznous": "Contáctanos",
+  "gnral": "General",
+  "bordesscelinegmailcom": "bordessceline@gmail.com",
+  "tlphone": "Teléfono",
+  "adresse_detail": "Place du 8 Mai 1945, 09000 Foix — France",
+  "faq": "FAQ",
+  "conditions": "Condiciones",
+  "plan_acces": "Plano de acceso",
+
+  "formulaire": "Formulario de contacto",
+  "remplissez_le_formulaire_cidessous_et_nous_vo": "Rellena el formulario y te responderemos en 48 h.",
+  "contact_name": "Tu nombre",
+  "contact_email": "Correo electrónico",
+  "order_number": "Número de pedido (opcional)",
+  "sujet": "Asunto",
+  "contact_message": "Tu mensaje",
+  "contact_send": "Enviar",
+  "delai_reponse": "Respondemos generalmente en menos de 48 horas.",
+  "contact_name_placeholder": "Nombre Apellido",
+  "contact_email_placeholder": "tu@email.com",
+
+  "ou_nous_trouver": "¿Dónde encontrarnos?",
+  "adresse_detail_map": "12 rue des Pyrénées, 09000 Foix — France",
+
+  "mentions_legales_title": "Aviso legal",
+  "site_cr_dans_le_cadre_dun_projet_bts_sio_slam": "Sitio creado en el marco de un proyecto BTS SIO SLAM. A continuación la información legal y de contacto.",
+  "cidessous_les_informations_lgales_et_de_conta": "A continuación la información legal y de contacto. Sustituye los campos entre corchetes antes de la publicación oficial.",
+
+  "informations_gnrales": "Información general",
+  "proprietaire": "Titular:",
+  "hebergement": "Alojamiento:",
+  "editeur_du_site": "Editor del sitio",
+  "texte_editeur_site": "El sitio Foix Lingua (en adelante, 'el Sitio') está editado por:",
+  "raison_sociale_nom": "Razón social / Nombre:",
+  "representant": "Representante:",
+  
+  "contactexemplecom": "contact@exemple.com",
+
+  "directeur_de_la_publication": "Director de la publicación",
+  "texte_directeur_pub": "El director de la publicación del Sitio es: [Nombre del director de la publicación].",
+
+  "le_site_est_heberge_par": "El Sitio está alojado por:",
+  "hebergeur": "Alojamiento / Proveedor:",
+  "adresse_hebergeur": "Dirección del proveedor de alojamiento:",
+  "telephone_hebergeur": "Teléfono del proveedor de alojamiento:",
+
+  "donnees_personnelles": "Datos personales",
+  "texte_donnees_personnelles": "Los datos personales recogidos en el Sitio se utilizan únicamente para las finalidades indicadas (contacto, solicitudes de información, inscripciones, etc.).",
+  "conformite_rgpd": "De conformidad con la ley ‘Informatique et Libertés’ y el RGPD, dispone de derecho de acceso, rectificación, supresión, limitación del tratamiento, oposición y portabilidad. Puede ejercer estos derechos por correo electrónico a la dirección indicada o por correo postal, adjuntando copia de su documento de identidad.",
+
+  "cookies": "Cookies",
+  "texte_cookies": "El Sitio utiliza cookies para mejorar la experiencia, realizar estadísticas y recordar preferencias de idioma y visualización. Puede configurar o rechazar cookies desde su navegador.",
+
+  "propriete_intellectuelle": "Propiedad intelectual",
+  "texte_propriete_intellectuelle": "Todos los contenidos del Sitio (textos, imágenes, vídeos, logotipos, iconos, etc.) están protegidos por la ley de propiedad intelectual y son propiedad exclusiva de sus autores. Queda prohibida su reproducción o uso sin autorización escrita.",
+
+  "responsabilite": "Responsabilidad",
+  "texte_responsabilite": "El editor pone los medios razonables para asegurar la exactitud y actualización de la información, pero no garantiza su exhaustividad ni exactitud.",
+
+  "liens_externes": "Enlaces externos",
+  "texte_liens_externes": "El Sitio puede contener enlaces a sitios de terceros. El editor no controla esos sitios y declina responsabilidad sobre su contenido o política de privacidad.",
+
+  "accessibilite": "Accesibilidad",
+  "texte_accessibilite": "El editor se esfuerza por hacer el Sitio accesible. Si detectas dificultades de acceso, notifícalo por correo electrónico.",
+
+  "droit_applicable_et_juridiction": "Ley aplicable y jurisdicción",
+  "texte_droit_applicable": "Estas menciones legales se rigen por la legislación francesa. En caso de litigio, los tribunales franceses serán competentes salvo disposición imperativa en contrario.",
+
+  "mise_a_jour": "Actualización",
+  "texte_mise_a_jour": "Estas menciones legales pueden modificarse en cualquier momento. La fecha de la última actualización aparece en el Sitio.",
+  "remarques": "Observaciones:",
+
+  "levels_title": "Niveles MCER",
+  "levels_intro": "Descubre los perfiles correspondientes a cada nivel.",
+  "levels_info_title": "Funcionamiento de los grupos",
+  "levels_info_text": "En Foix Lingua hay un grupo pequeño de máximo 6 estudiantes. Las clases están abiertas a todos los niveles. El nivel de la primera persona inscrita determina el nivel de la semana.",
+  "levels_calendar_text": "El calendario indica las fechas correspondientes a cada nivel.",
+  "levels_cefr_description": "Los niveles corresponden a los perfiles. Las indicaciones entre paréntesis (A2, B1, etc.) remiten al MCER.",
+  "grille_officielle_cefr": "tabla oficial MCER",
+  "photo_stagiaires_alt": "Estudiantes en grupo",
+
+"dbutant": "Nivel Iniciación o Acceso",
+"levels_a1_subtitle": "Tu perfil",
+"profile_a1": "✔️Nivel Iniciación o Acceso\nEl estudiante es capaz de comprender y utilizar expresiones familiares y cotidianas, así como frases sencillas para satisfacer necesidades concretas. Puede presentarse a sí mismo y a otros y hacer preguntas a alguien sobre su domicilio, sus pertenencias, las personas que conoce, etc. Puede responder al mismo tipo de preguntas. Puede mantener una conversación sencilla siempre que su interlocutor hable despacio y con claridad y esté dispuesto a cooperar.",
+
+"levels_a2_title": "Nivel Intermedio o Plataforma",
+"levels_a2_subtitle": "Tu perfil",
+"profile_a2": "✔️Nivel Intermedio o Plataforma\nEl estudiante es capaz de comprender frases aisladas y expresiones de uso frecuente relacionadas con áreas especialmente relevantes (información básica sobre sí mismo y su familia, compras, entorno más cercano, trabajo, etc.). Sabe comunicarse a la hora de llevar a cabo tareas simples y cotidianas que no requieran más que intercambios sencillos y directos de información sobre cuestiones conocidas o habituales. Sabe describir en términos sencillos aspectos de su formación y su entorno inmediato, así como cuestiones conocidas y habituales o relacionadas con sus necesidades inmediatas.",
+
+"levels_b1_title": "Nivel Umbral",
+"levels_b1_subtitle": "Tu perfil",
+"profile_b1": "✔️Nivel Umbral\nEl estudiante es capaz de comprender los puntos principales cuando se usa un lenguaje claro y estándar si tratan cuestiones conocidas relacionadas con el trabajo, los estudios, el ocio, etc. Sabe desenvolverse en la mayor parte de las situaciones que pueden surgir durante un viaje por zonas donde se utiliza el idioma en cuestión. Es capaz de producir un discurso sencillo y coherente sobre temas que le son familiares o ámbitos de su interés. Puede describir acontecimientos, experiencias, deseos, esperanzas y aspiraciones, así como exponer brevemente razones o explicaciones sobre un proyecto o una idea.",
+
+"levels_b2c1_title": "Nivel Avanzado o Independiente",
+"levels_b2c1_subtitle": "Tu perfil",
+"profile_b2c1": "✔️Nivel Avanzado o Independiente\nEl estudiante es capaz de entender las ideas principales de textos complejos que traten temas tanto concretos como abstractos, incluso si son de carácter técnico siempre que estén dentro de su campo de especialización. Puede relacionarse con hablantes nativos con un grado suficiente de fluidez y naturalidad de modo que la comunicación se realice sin esfuerzo por parte de ninguno de los interlocutores. Puede expresarse de forma clara y detallada sobre temas diversos, defender un punto de vista sobre un tema de actualidad y exponer los pros y los contras de distintas posibilidades."
+,
+  "CLASE_INDIVIDUAL_TITLE": "Clase individual",
+  "clase_individual_1h": "1 hora = 40 €",
+  "clase_individual_paquete_10h": "Paquete 10 h = 350 €",
+
+  "curso_intensivo_precios_note": "Precios para cursos intensivos (precio por persona; si 2 personas cambia):",
+  "curso_intensivo_1semana_precio": "1 semana: 650 € (si 2 personas: 600 € / persona)",
+  "curso_intensivo_2semanas_precio": "2 semanas: 1200 € (si 2 personas: 1100 € / persona)",
+  "curso_intensivo_details": "Este precio corresponde a 30 horas por semana: 15 h de clase + 15 h de conversación (almuerzos, actividades, excursiones).",
+  "no_incluido_lista": "No incluido:\n• Almuerzos (20 - 25 €)\n• Visitas guiadas\n• Entradas a determinados lugares",
+  "curso_unico_participante": "Si eres el único participante, el curso y el precio se mantienen pero el programa se reducirá a 25 horas.",
+  "clases_semi_privadas": "También se pueden organizar clases semiprivadas (2 estudiantes).",
+  "programa_personalizado": "El programa puede adaptarse a tu solicitud; se proporcionará presupuesto.",
+
+  "inmersión_titulo": "Inmersión en casa de la profesora",
+  "inmersión_precios": "1200 € / 1 semana - 2300 € / 2 semanas",
+  "inmersión_incluido": "Incluido: alojamiento, comidas, 15 h de clase individual por semana, actividades y paseos.",
+  "inmersión_no_incluido": "No incluido: entradas a cine, museos, cuevas y comidas en restaurantes.",
+  "pago_informacion": "Pago: No aceptamos tarjetas. El depósito se paga en euros por transferencia (comisiones bancarias por cuenta del inscrito). En caso de cancelación, el depósito no es reembolsable salvo que encuentres sustituto. El saldo se paga por los mismos métodos o en efectivo al inicio del curso.",
+
+  "conditions_generales_titre": "Condiciones generales de inscripción",
+  "conditions_age": "Edad: Los participantes deben ser mayores de 18 años.",
+  "conditions_inscription": "Inscripción: 30% del coste al inscribirse; el resto antes del primer día de clases. Comisiones bancarias a cargo del inscrito.",
+  "conditions_annulation": "Cancelación: Hasta 3 meses antes, reembolso menos 70 €. Entre 3 meses y 30 días, reembolso 50 %. Menos de 30 días, sin reembolso.",
+  "conditions_seguro": "Seguro: Se recomienda tener póliza con asistencia en viaje.",
+  "pago_title": "PAGO",
+"pago_no_tarjetas": "No aceptamos tarjetas de crédito o débito.",
+"pago_deposito":"El depósito debe abonarse en euros, mediante transferencia bancaria (cualquier comisión bancaria, local o en Francia, corre por tu cuenta). En caso de cancelación, el depósito no es reembolsable a menos que encuentres un reemplazo. El saldo restante debe pagarse mediante los mismos métodos o en efectivo, al inicio del curso."
+  ,
+  "mentions_extra_note": "Si falta alguna traducción dímelo; uso preferentemente tu versión en español y he completado lo que faltaba."
+,
+"note_inscription":"Condiciones de inscripción para las clases de francés :"
+,
+"test":"Edad: Los participantes deben ser mayores de 18 años.",
+"test2":"Inscripción : 30% del coste de la formación ha de ser abonado cuando la inscripción, el resto deberá ser pagado como muy tarde el primer día de clase. Los gastos bancarios corren integralmente a cargo de los inscritos",
+"test3":"Cancelación : Hasta 3 meses antes de comenzar la formación, la suma será reembolsada tras deducción de un importe de 70 € . En caso de cancelación entre 3 meses y 30 días antes del principio del curso, la mitad de la suma será reembolsada. En caso de cancelación a menos de 30 días, la suma no será reembolsada.",
+"test4":"Seguro: Se aconseja tener una póliza de seguro que incluya una asistencia para viaje."
+
+}
